@@ -1,0 +1,1991 @@
+[
+   {
+      "Add OnChange (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().addOnChange() (5.0+)",
+         "description":"Sets a function to be called when the attribute value is changed.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").addOnChange(functionName)"
+         ]
+      }
+   },
+   {
+      "Fire OnChange (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().fireOnChange() (5.0+)",
+         "description":"Causes the OnChange event to occur on the attribute so that any script associated to that event can execute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").fireOnChange()"
+         ]
+      }
+   },
+   {
+      "Get Attribute Name (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getName() (5.0+)",
+         "description":"Returns a string representing the logical name of the attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getName()"
+         ]
+      }
+   },
+   {
+      "Get Attribute Type (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getAttributeType() (5.0+)",
+         "description":"Returns a string value that represents the type of attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getAttributeType()"
+         ]
+      }
+   },
+   {
+      "Get Format (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getFormat() (5.0+)",
+         "description":"Returns a string value that represents formatting options for the attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getFormat()"
+         ]
+      }
+   },
+   {
+      "Get Initial Value (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getInitialValue() (5.0+)",
+         "description":"Returns a value that represents the value set for an OptionSet or Boolean attribute when the form opened.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getInitialValue()"
+         ]
+      }
+   },
+   {
+      "Get IsDirty (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getIsDirty() (5.0+)",
+         "description":"Returns a Boolean value indicating if there are unsaved changes to the attribute value.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getIsDirty()"
+         ]
+      }
+   },
+   {
+      "Get IsPartyList (6.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getIsPartyList() (6.0+)",
+         "description":"Returns a Boolean value indicating whether the lookup represents a partylist lookup. Partylist lookups allow for multiple records to be set, such as the To: field for an email entity record.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getIsPartyList()"
+         ]
+      }
+   },
+   {
+      "Get Max (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getMax() (5.0+)",
+         "description":"Returns a number indicating the maximum allowed value for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getMax()"
+         ]
+      }
+   },
+   {
+      "Get Max Length (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getMaxLength() (5.0+)",
+         "description":"Returns a number indicating the maximum length of a string or memo attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getMaxLength()"
+         ]
+      }
+   },
+   {
+      "Get Min (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getMin() (5.0+)",
+         "description":"Returns a number indicating the minimum allowed value for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getMin()"
+         ]
+      }
+   },
+   {
+      "Get Option (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getOption() (5.0+)",
+         "description":"Returns an option object with the value matching the argument passed to the method.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getOption(value)"
+         ]
+      }
+   },
+   {
+      "Get Options (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getOptions() (5.0+)",
+         "description":"Returns an array of option objects representing the valid options for an optionset attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getOptions()"
+         ]
+      }
+   },
+   {
+      "Parent (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getParent() (5.0+)",
+         "description":"Returns the Xrm.Page.data.entity object that is the parent to all attributes.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getParent()"
+         ]
+      }
+   },
+   {
+      "Get Precision (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getPrecision() (5.0+)",
+         "description":"Returns the number of digits allowed to the right of the decimal point.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getPrecision()"
+         ]
+      }
+   },
+   {
+      "Get Required Level (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getRequiredLevel() (5.0+)",
+         "description":"Returns a string value indicating whether a value for the attribute is required or recommended.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getRequiredLevel()"
+         ]
+      }
+   },
+   {
+      "Get Selected Option (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getSelectedOption() (5.0+)",
+         "description":"Returns the option object that is selected in an optionset attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getSelectedOption()"
+         ]
+      }
+   },
+   {
+      "Get Submit Mode (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getSubmitMode() (5.0+)",
+         "description":"Returns a string indicating when data from the attribute will be submitted when the record is saved.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getSubmitMode()"
+         ]
+      }
+   },
+   {
+      "Get Text (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getText() (5.0+)",
+         "description":"Returns a string value of the text for the currently selected option for an optionset attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getText()"
+         ]
+      }
+   },
+   {
+      "Get User Privilege (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getUserPrivilege() (5.0+)",
+         "description":"Returns an object with three Boolean properties corresponding to privileges indicating if the user can create, read or update data values for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getUserPrivilege()"
+         ]
+      }
+   },
+   {
+      "Get Attribute Value (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().getValue() (5.0+)",
+         "description":"Retrieves the data value for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").getValue()"
+         ]
+      }
+   },
+   {
+      "Remove OnChange (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().removeOnChange() (5.0+)",
+         "description":"Removes a function from the OnChange event hander for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").removeOnChange(functionName)"
+         ]
+      }
+   },
+   {
+      "Set Required Level (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().setRequiredLevel() (5.0+)",
+         "description":"Sets whether data is required or recommended for the attribute before the record can be saved.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").setRequiredLevel(\"none\"|\"required\"|\"recommended\")"
+         ]
+      }
+   },
+   {
+      "Set Submit Mode (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().setSubmitMode() (5.0+)",
+         "description":"Sets whether data from the attribute will be submitted when the record is saved.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").setSubmitMode(\"always\"|\"never\"|\"dirty\")"
+         ]
+      }
+   },
+   {
+      "Set Attribute Value (5.0+)":{
+         "prefix":"Xrm.Page.getAttribute().setValue() (5.0+)",
+         "description":"Sets the data value for an attribute.",
+         "body":[
+            "Xrm.Page.getAttribute(\"fieldname\").setValue(\"value\")"
+         ]
+      }
+   },
+   {
+      "Add OnStageChange (7.0+)":{
+         "prefix":"Xrm.Page.data.process.addOnStageChange() (7.0+)",
+         "description":"Use these methods to add or remove event handlers for the business process flow control.",
+         "body":[
+            "Xrm.Page.data.process.addOnStageChange([functionName])"
+         ]
+      }
+   },
+   {
+      "Add OnStageSelected (7.0+)":{
+         "prefix":"Xrm.Page.data.process.addOnStageSelected() (7.0+)",
+         "description":"Use this to add a function as an event handler for the OnStageSelected event so that it will be called when a business process flow stage is selected.",
+         "body":[
+            "Xrm.Page.data.process.addOnStageSelected([functionName])"
+         ]
+      }
+   },
+   {
+      "Get Active Path (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActivePath() (7.0+)",
+         "description":"Use this method to get a collection of stages currently in the active path with methods to interact with the stages displayed in the business process flow control.",
+         "body":[
+            "Xrm.Page.data.process.getActivePath()"
+         ]
+      }
+   },
+   {
+      "Get Active Process (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess() (7.0+)",
+         "description":"Returns a Process object representing the active process.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess()"
+         ]
+      }
+   },
+   {
+      "Get Active Stage (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveStage() (7.0+)",
+         "description":"Use getActiveStage to retrieve information about the active stage and setActiveStage to set a different stage as the active stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveStage()"
+         ]
+      }
+   },
+   {
+      "Get Display State (7.1+)":{
+         "prefix":"Xrm.Page.ui.process.getDisplayState() (7.1+)",
+         "description":"For Microsoft Dynamics CRM Online 2015 Update 1 use this method to retrieve the display state for the business process control.",
+         "body":[
+            "Xrm.Page.ui.process.getDisplayState()"
+         ]
+      }
+   },
+   {
+      "Get Enabled Processes (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getEnabledProcesses() (7.0+)",
+         "description":"Use this method to asynchronously retrieve the enabled business process flows that the user can switch to for an entity.",
+         "body":[
+            "Xrm.Page.data.process.getEnabledProcesses([callbackFunctionName(enabledProcesses)])"
+         ]
+      }
+   },
+   {
+      "Get Selected Stage (7.1+)":{
+         "prefix":"Xrm.Page.data.process.getSelectedStage() (7.1+)",
+         "description":"Use this method to get the currently selected stage.",
+         "body":[
+            "Xrm.Page.data.process.getSelectedStage()"
+         ]
+      }
+   },
+   {
+      "Get Visible (7.1+)":{
+         "prefix":"Xrm.Page.ui.process.getVisible() (7.1+)",
+         "description":"For Microsoft Dynamics CRM Online 2015 Update 1 use this method to retrieve whether the business process control is visible.",
+         "body":[
+            "Xrm.Page.ui.process.getVisible()"
+         ]
+      }
+   },
+   {
+      "Move Next (7.0+)":{
+         "prefix":"Xrm.Page.data.process.moveNext() (7.0+)",
+         "description":"Progresses to the next stage.",
+         "body":[
+            "Xrm.Page.data.process.moveNext([callbackFunctionName])"
+         ]
+      }
+   },
+   {
+      "Move Previous (7.0+)":{
+         "prefix":"Xrm.Page.data.process.movePrevious() (7.0+)",
+         "description":"Moves to the previous stage. With Microsoft Dynamics CRM Online 2015 Update 1 you can use movePrevious to a previous stage in a different entity.",
+         "body":[
+            "Xrm.Page.data.process.movePrevious([callbackFunctionName])"
+         ]
+      }
+   },
+   {
+      "Remove OnStageChange (7.0+)":{
+         "prefix":"Xrm.Page.data.process.removeOnStageChange() (7.0+)",
+         "description":"Use this to remove a function as an event handler for the OnStageChange event.",
+         "body":[
+            "Xrm.Page.data.process.removeOnStageChange([functionName])"
+         ]
+      }
+   },
+   {
+      "Remove OnStageSelected (7.0+)":{
+         "prefix":"Xrm.Page.data.process.removeOnStageSelected() (7.0+)",
+         "description":"Use this to remove a function as an event handler for the OnStageSelected event.",
+         "body":[
+            "Xrm.Page.data.process.removeOnStageSelected([functionName])"
+         ]
+      }
+   },
+   {
+      "Set Active Process (7.0+)":{
+         "prefix":"Xrm.Page.data.process.setActiveProcess() (7.0+)",
+         "description":"Set a Process as the active process.",
+         "body":[
+            "Xrm.Page.data.process.setActiveProcess(\"processId\", [callbackFunctionName])"
+         ]
+      }
+   },
+   {
+      "Set Active Stage (7.0+)":{
+         "prefix":"Xrm.Page.data.process.setActiveStage() (7.0+)",
+         "description":"Set a completed stage as the active stage.",
+         "body":[
+            "Xrm.Page.data.process.setActiveStage(\"stageId\", [callbackFunctionName])"
+         ]
+      }
+   },
+   {
+      "Set Display State (7.0+)":{
+         "prefix":"Xrm.Page.ui.process.setDisplayState() (7.0+)",
+         "description":"Use this method to expand or collapse the business process flow control.",
+         "body":[
+            "Xrm.Page.ui.process.setDisplayState(\"expanded\"|\"collapsed\")"
+         ]
+      }
+   },
+   {
+      "Set Visible (7.0+)":{
+         "prefix":"Xrm.Page.ui.process.setVisible() (7.0+)",
+         "description":"Use this method to show or hide the business process flow control.",
+         "body":[
+            "Xrm.Page.ui.process.setVisible(true|false)"
+         ]
+      }
+   },
+   {
+      "ForEach Attributes (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.attributes.forEach (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of attributes.",
+         "body":[
+            "Xrm.Page.data.entity.attributes.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Controls (5.0+)":{
+         "prefix":"Xrm.Page.ui.controls.forEach() (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of controls.",
+         "body":[
+            "Xrm.Page.ui.controls.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Form Selector (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.forEach() (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of forms.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Navigation Item (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.forEach() (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of navigation items.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Sections (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.forEach() (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of sections.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Section Controls (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().controls.forEach() (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of controls in a section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).controls.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "ForEach Tabs (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.forEach (5.0+)",
+         "description":"Apply an action in a delegate function to each object in the collection of tabs.",
+         "body":[
+            "Xrm.Page.ui.tabs.forEach(function (control, index) {",
+            "",
+            "})"
+         ]
+      }
+   },
+   {
+      "Get Attributes (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.attributes.get() (5.0+)",
+         "description":"A collection of all the attributes on the page.",
+         "body":[
+            "Xrm.Page.data.entity.attributes.get()"
+         ]
+      }
+   },
+   {
+      "Get Attributes Count (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.attributes.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of attributes.",
+         "body":[
+            "Xrm.Page.data.entity.attributes.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Controls (5.0+)":{
+         "prefix":"Xrm.Page.ui.controls.get() (5.0+)",
+         "description":"A collection of all the controls on the page.",
+         "body":[
+            "Xrm.Page.ui.controls.get()"
+         ]
+      }
+   },
+   {
+      "Get Controls Count (5.0+)":{
+         "prefix":"Xrm.Page.ui.controls.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of controls.",
+         "body":[
+            "Xrm.Page.ui.controls.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Form Selectors (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.get() (5.0+)",
+         "description":"A collection of all the forms on the page.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.get()"
+         ]
+      }
+   },
+   {
+      "Get Form Selectors Count (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of forms.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Navigation Items. (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get() (5.0+)",
+         "description":"A collection of all the navigation items on the page.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get()"
+         ]
+      }
+   },
+   {
+      "Get Navigation Items Count (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of navigation items.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Section Controls (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().controls.get() (5.0+)",
+         "description":"A collection of all the controls in the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).controls.get()"
+         ]
+      }
+   },
+   {
+      "Get Sections (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get() (5.0+)",
+         "description":"A collection of all the sections in a tab.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get()"
+         ]
+      }
+   },
+   {
+      "Get Sections Count (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of sections.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Tabs (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get() (5.0+)",
+         "description":"A collection of all the tabs on the page.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex)"
+         ]
+      }
+   },
+   {
+      "Get Tabs Count (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.getLength() (5.0+)",
+         "description":"Get the number of items in the collection of tabs.",
+         "body":[
+            "Xrm.Page.ui.tabs.getLength()"
+         ]
+      }
+   },
+   {
+      "Get Client (6.0+)":{
+         "prefix":"Xrm.Page.context.client.getClient() (6.0+)",
+         "description":"Returns a value to indicate which client the script is executing in.",
+         "body":[
+            "Xrm.Page.context.client.getClient()"
+         ]
+      }
+   },
+   {
+      "Get Client State (6.0+)":{
+         "prefix":"Xrm.Page.context.client.getClientState() (6.0+)",
+         "description":"Returns a value to indicate the state of the client.",
+         "body":[
+            "Xrm.Page.context.client.getClientState()"
+         ]
+      }
+   },
+   {
+      "Get Client Url (5.0+)":{
+         "prefix":"Xrm.Page.context.getClientUrl() (5.0+)",
+         "description":"Returns the base URL that was used to access the application.",
+         "body":[
+            "Xrm.Page.context.getClientUrl()"
+         ]
+      }
+   },
+   {
+      "Get Current Theme (5.0+)":{
+         "prefix":"Xrm.Page.context.getCurrentTheme() (5.0+)",
+         "description":"Returns a string representing the current Microsoft Office Outlook theme chosen by the user.",
+         "body":[
+            "Xrm.Page.context.getCurrentTheme()"
+         ]
+      }
+   },
+   {
+      "Get FormFactor (7.1+)":{
+         "prefix":"Xrm.Page.context.client.getFormFactor() (7.1+)",
+         "description":"Use this method to get information about the kind of device the user is using.",
+         "body":[
+            "Xrm.Page.context.client.getFormFactor()"
+         ]
+      }
+   },
+   {
+      "Get Is Auto Save Enabled (7.0+)":{
+         "prefix":"Xrm.Page.context.getIsAutoSaveEnabled() (7.0+)",
+         "description":"Returns whether Autosave is enabled for the organization.",
+         "body":[
+            "Xrm.Page.context.getIsAutoSaveEnabled()"
+         ]
+      }
+   },
+   {
+      "Get LCID (5.0+)":{
+         "prefix":"Xrm.Page.context.getOrgLcid() (5.0+)",
+         "description":"Returns the LCID value that represents the Microsoft Dynamics CRM Language Pack that is the base language for the organization.",
+         "body":[
+            "Xrm.Page.context.getOrgLcid()"
+         ]
+      }
+   },
+   {
+      "Get Org Unique Name (5.0+)":{
+         "prefix":"Xrm.Page.context.getOrgUniqueName() (5.0+)",
+         "description":"Returns the unique text value of the organization’s name.",
+         "body":[
+            "Xrm.Page.context.getOrgUniqueName()"
+         ]
+      }
+   },
+   {
+      "Get Query String Parameters (5.0+)":{
+         "prefix":"Xrm.Page.context.getQueryStringParameters() (5.0+)",
+         "description":"Returns a dictionary object of key value pairs that represent the query string arguments that were passed to the page.",
+         "body":[
+            "Xrm.Page.context.getQueryStringParameters()"
+         ]
+      }
+   },
+   {
+      "Get Time Zone Offset Minutes (7.1+)":{
+         "prefix":"Xrm.Page.context.getTimeZoneOffsetMinutes() (7.1+)",
+         "description":"Returns the difference between the local time and Coordinated Universal Time (UTC).",
+         "body":[
+            "Xrm.Page.context.getTimeZoneOffsetMinutes()"
+         ]
+      }
+   },
+   {
+      "Get User Id (5.0+)":{
+         "prefix":"Xrm.Page.context.getUserId() (5.0+)",
+         "description":"Returns the GUID of the SystemUser.Id value for the current user.",
+         "body":[
+            "Xrm.Page.context.getUserId()"
+         ]
+      }
+   },
+   {
+      "Get User Lcid (5.0+)":{
+         "prefix":"Xrm.Page.context.getUserLcid() (5.0+)",
+         "description":"Returns the LCID value that represents the Microsoft Dynamics CRM Language Pack that is the user selected as their preferred language.",
+         "body":[
+            "Xrm.Page.context.getUserLcid()"
+         ]
+      }
+   },
+   {
+      "Get User Name (6.0+)":{
+         "prefix":"Xrm.Page.context.getUserName() (6.0+)",
+         "description":"Returns the name of the current user.",
+         "body":[
+            "Xrm.Page.context.getUserName()"
+         ]
+      }
+   },
+   {
+      "Get User Roles (5.0+)":{
+         "prefix":"Xrm.Page.context.getUserRoles() (5.0+)",
+         "description":"Returns an array of strings that represent the GUID values of each of the security roles that the user is associated with and any teams that the user is associated with.",
+         "body":[
+            "Xrm.Page.context.getUserRoles()"
+         ]
+      }
+   },
+   {
+      "Is Outlook Client (5.0-6.1)":{
+         "prefix":"Xrm.Page.context.isOutlookClient() (5.0-6.1)",
+         "description":"Returns a Boolean value indicating if the user is using Microsoft Dynamics CRM for Microsoft Office Outlook.",
+         "body":[
+            "Xrm.Page.context.isOutlookClient()"
+         ]
+      }
+   },
+   {
+      "Is Outlook Online (5.0-6.1)":{
+         "prefix":"Xrm.Page.context.isOutlookOnline() (5.0-6.1)",
+         "description":"Returns a Boolean value that indicates whether the user is connected to the Microsoft Dynamics CRM server while using Microsoft Dynamics CRM for Microsoft Office Outlook with Offline Access. When this function returns false, the user is working offline without a connection to the server.",
+         "body":[
+            "Xrm.Page.context.isOutlookOnline()"
+         ]
+      }
+   },
+   {
+      "Prepend OrgName (5.0+)":{
+         "prefix":"Xrm.Page.context.prependOrgName() (5.0+)",
+         "description":"Prepends the organization name to the specified path.",
+         "body":[
+            "Xrm.Page.context.prependOrgName(\"path\")"
+         ]
+      }
+   },
+   {
+      "Add Custom Filter (6.0+)":{
+         "prefix":"Xrm.Page.getControl().addCustomFilter() (6.0+)",
+         "description":"Use to add filters to the results displayed in the lookup. Each filter will be combined with any previously added filters as an “AND” condition.",
+         "body":[
+            "var entityName = \"account\";",
+            "var filter = \"<filter type='and'><condition attribute='name' operator='eq' value='test' /></filter>\";",
+            "",
+            "Xrm.Page.getControl(\"fieldname\").addCustomFilter(filter, entityName);"
+         ]
+      }
+   },
+   {
+      "Add Custom View (5.0+)":{
+         "prefix":"Xrm.Page.getControl().addCustomView() (5.0+)",
+         "description":"Adds a new view for the lookup dialog box.",
+         "body":[
+            "var viewId = \"F0EE06F5-BB78-465F-BADA-FC3F5CF05300\";",
+            "var entityName = \"account\";",
+            "var viewDisplayName = \"Custom View\";",
+            "var fetchXml = \"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>\" +",
+            "\t\"<entity name='account'>\" +",
+            "\t\"<attribute name='name' />\" +",
+            "\t\"<attribute name='accountid' />\" +",
+            "\t\"<filter type='and'>\" +",
+            "\t\"<condition attribute='name' operator='eq' value='test' />\" +",
+            "\t\"</filter>\" +",
+            "\t\"</entity>\" +",
+            "\t\"</fetch>\";",
+            "",
+            "var layoutXml = \"<grid name='resultset' object='1' jump='accountid' select='1' icon='1' preview='1'>\" +",
+            "\t\"<row name='result' id='accountid'>\" +",
+            "\t\"<cell name='name' width='150' />\" +",
+            "\t\"</row>\" +",
+            "\t\"</grid>\";",
+            "var isDefault = true;",
+            "",
+            "Xrm.Page.getControl(\"fieldname\").addCustomView(viewId, entityName, viewDisplayName, fetchXml, layoutXml, isDefault);"
+         ]
+      }
+   },
+   {
+      "Add OnKeyPress (8.0+)":{
+         "prefix":"Xrm.Page.getControl().addOnKeyPress() (8.0+)",
+         "description":"Use this to add a function as an event handler for the keypress event so that the function is called when you type a character in the specific text or number field.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").addOnKeyPress(functionName)"
+         ]
+      }
+   },
+   {
+      "Add Option (5.0+)":{
+         "prefix":"Xrm.Page.getControl().addOption() (5.0+)",
+         "description":"Adds an option to an option set control.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").addOption(option, [index])"
+         ]
+      }
+   },
+   {
+      "Add PreSearch (6.0+)":{
+         "prefix":"Xrm.Page.getControl().addPreSearch() (6.0+)",
+         "description":"Use this method to apply changes to lookups based on values current just as the user is about to view results for the lookup.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").addPreSearch(functionName)"
+         ]
+      }
+   },
+   {
+      "Clear Notification (6.0+)":{
+         "prefix":"Xrm.Page.getControl().clearNotification() (6.0+)",
+         "description":"Remove a message already displayed for a control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").clearNotification(\"uniqueId\")"
+         ]
+      }
+   },
+   {
+      "Clear Options (5.0+)":{
+         "prefix":"Xrm.Page.getControl().clearOptions() (5.0+)",
+         "description":"Clears all options from an option set control.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").clearOptions()"
+         ]
+      }
+   },
+   {
+      "Fire OnKeyPress (8.0+)":{
+         "prefix":"Xrm.Page.getControl().fireOnKeyPress() (8.0+)",
+         "description":"Use this to manually fire an event handler that you created for a specific text or number field to be executed on the keypress event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").fireOnKeyPress()"
+         ]
+      }
+   },
+   {
+      "Get Attribute (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getAttribute() (5.0+)",
+         "description":"Returns the attribute that the control is bound to.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getAttribute()"
+         ]
+      }
+   },
+   {
+      "Control Type (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getControlType() (5.0+)",
+         "description":"Returns a value that categorizes controls.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getControlType()"
+         ]
+      }
+   },
+   {
+      "Get Data (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getData() (5.0+)",
+         "description":"Returns the value of the data query string parameter passed to a Silverlight web resource.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getData()"
+         ]
+      }
+   },
+   {
+      "Get Default View (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getDefaultView() (5.0+)",
+         "description":"Returns the Id value of the default lookup dialog view.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").getDefaultView()"
+         ]
+      }
+   },
+   {
+      "Get Disabled (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getDisabled() (5.0+)",
+         "description":"Returns whether the control is disabled.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getDisabled()"
+         ]
+      }
+   },
+   {
+      "Get Initial Url (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getInitialUrl() (5.0+)",
+         "description":"Returns the default URL that an IFRAME control is configured to display. This method is not available for web resources.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getInitialUrl()"
+         ]
+      }
+   },
+   {
+      "Get Label (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getLabel() (5.0+)",
+         "description":"Returns the label for the control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getLabel()"
+         ]
+      }
+   },
+   {
+      "Get Name (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getName() (5.0+)",
+         "description":"Returns the name assigned to the control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getName()"
+         ]
+      }
+   },
+   {
+      "Get Object (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getObject() (5.0+)",
+         "description":"Returns the object in the form that represents an I-frame or web resource.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getObject()"
+         ]
+      }
+   },
+   {
+      "Get Parent (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getParent() (5.0+)",
+         "description":"Returns a reference to the section object that contains the control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getParent()"
+         ]
+      }
+   },
+   {
+      "Get Show Time (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getShowTime() (7.1+)",
+         "description":"Get whether a date control shows the time portion of the date.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").getShowTime()"
+         ]
+      }
+   },
+   {
+      "Get Src (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getSrc() (5.0+)",
+         "description":"Returns the current URL being displayed in an IFRAME or web resource.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getSrc()"
+         ]
+      }
+   },
+   {
+      "Get Visible (5.0+)":{
+         "prefix":"Xrm.Page.getControl().getVisible() (5.0+)",
+         "description":"Returns a value that indicates whether the control is currently visible.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getVisible()"
+         ]
+      }
+   },
+   {
+      "Hide AutoComplete (8.0+)":{
+         "prefix":"Xrm.Page.getControl().hideAutoComplete() (8.0+)",
+         "description":"Use this function to hide the auto-completion drop-down list you configured for a specific text field.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").hideAutoComplete()"
+         ]
+      }
+   },
+   {
+      "Remove OnKeyPress (8.0+)":{
+         "prefix":"Xrm.Page.getControl().removeOnKeyPress() (8.0+)",
+         "description":"Use this to remove an event handler for a text or number field that you added using addOnKeyPress.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").removeOnKeyPress(functionName)"
+         ]
+      }
+   },
+   {
+      "Remove Option (5.0+)":{
+         "prefix":"Xrm.Page.getControl().removeOption() (5.0+)",
+         "description":"Removes an option from an option set control.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").removeOption(number)"
+         ]
+      }
+   },
+   {
+      "Remove PreSearch (6.0+)":{
+         "prefix":"Xrm.Page.getControl().removePreSearch() (6.0+)",
+         "description":"Use this method to remove event handler functions that have previously been set for the PreSearch event.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").removePreSearch(functionName)"
+         ]
+      }
+   },
+   {
+      "Set Data (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setData() (5.0+)",
+         "description":"Sets the value of the data query string parameter passed to a Silverlight web resource.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setData(value)"
+         ]
+      }
+   },
+   {
+      "Set Default View (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setDefaultView() (5.0+)",
+         "description":"Sets the default view for the lookup control dialog.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").setDefaultView(\"viewId\")"
+         ]
+      }
+   },
+   {
+      "Set Disabled (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setDisabled() (5.0+)",
+         "description":"Sets whether the control is disabled.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setDisabled(true|false)"
+         ]
+      }
+   },
+   {
+      "Set Focus (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setFocus() (5.0+)",
+         "description":"Sets the focus on the control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setFocus()"
+         ]
+      }
+   },
+   {
+      "Set Label (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setLabel() (5.0+)",
+         "description":"Sets the label for the control.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").setLabel(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Notification (6.0+)":{
+         "prefix":"Xrm.Page.getControl().setNotification() (6.0+)",
+         "description":"Display a message near the control to indicate that data isn’t valid.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setNotification(\"message\", \"uniqueId\")"
+         ]
+      }
+   },
+   {
+      "Set Show Time (6.0+)":{
+         "prefix":"Xrm.Page.getControl().setShowTime() (6.0+)",
+         "description":"Specify whether a date control should show the time portion of the date.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").setShowTime(true|false)"
+         ]
+      }
+   },
+   {
+      "Set Src (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setSrc() (5.0+)",
+         "description":"Sets the URL to be displayed in an IFRAME or web resource.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setSrc(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Visible (5.0+)":{
+         "prefix":"Xrm.Page.getControl().setVisible() (5.0+)",
+         "description":"Sets a value that indicates whether the control is visible.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setVisible(true|false)"
+         ]
+      }
+   },
+   {
+      "Show AutoComplete (8.0+)":{
+         "prefix":"Xrm.Page.getControl().showAutoComplete() (8.0+)",
+         "description":"Use this to show up to 10 matching strings in a drop-down list as users press keys to type character in a specific text field. You can also add a custom command with an icon at the bottom of the drop-down list.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").showAutoComplete(object)"
+         ]
+      }
+   },
+   {
+      "Add OnSave (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.addOnSave() (5.0+)",
+         "description":"Sets a function to be called when the record is saved.",
+         "body":[
+            "Xrm.Page.data.entity.addOnSave(functionName)"
+         ]
+      }
+   },
+   {
+      "Get Data Xml (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.getDataXml() (5.0+)",
+         "description":"Returns a string representing the XML that will be sent to the server when the record is saved. Only data in fields that have changed are set to the server.",
+         "body":[
+            "Xrm.Page.data.entity.getDataXml()"
+         ]
+      }
+   },
+   {
+      "Get Entity Name (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.getEntityName() (5.0+)",
+         "description":"Returns a string representing the logical name of the entity for the record.",
+         "body":[
+            "Xrm.Page.data.entity.getEntityName()"
+         ]
+      }
+   },
+   {
+      "Get Id (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.getId() (5.0+)",
+         "description":"Returns a string representing the GUID id value for the record.",
+         "body":[
+            "Xrm.Page.data.entity.getId()"
+         ]
+      }
+   },
+   {
+      "Get IsDirty (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.getIsDirty() (5.0+)",
+         "description":"Returns a Boolean value that indicates if any fields in the form have been modified.",
+         "body":[
+            "Xrm.Page.data.entity.getIsDirty()"
+         ]
+      }
+   },
+   {
+      "Get Primary Attribute Value (6.0+)":{
+         "prefix":"Xrm.Page.data.entity.getPrimaryAttributeValue() (6.0+)",
+         "description":"Gets a string for the value of the primary attribute of the entity.",
+         "body":[
+            "Xrm.Page.data.entity.getPrimaryAttributeValue()"
+         ]
+      }
+   },
+   {
+      "Remove OnSave (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.removeOnSave() (5.0+)",
+         "description":"Removes a function to be called when the record is saved.",
+         "body":[
+            "Xrm.Page.data.entity.removeOnSave(functionName)"
+         ]
+      }
+   },
+   {
+      "Save (5.0+)":{
+         "prefix":"Xrm.Page.data.entity.save() (5.0+)",
+         "description":"Saves the record synchronously with the options to close the form or open a new form after the save is completed.",
+         "body":[
+            "Xrm.Page.data.entity.save(null|\"saveandclose\"|\"saveandnew\")"
+         ]
+      }
+   },
+   {
+      "Get Form Id (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.get().getId() (5.0+)",
+         "description":"Returns the GUID ID of the form.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.get(formindex).getId()"
+         ]
+      }
+   },
+   {
+      "Get Form Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.get().getLabel() (5.0+)",
+         "description":"Returns the label of the form.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.get(formindex).getLabel()"
+         ]
+      }
+   },
+   {
+      "Navigate (5.0+)":{
+         "prefix":"Xrm.Page.ui.formSelector.items.get().navigate() (5.0+)",
+         "description":"Opens the specified form.",
+         "body":[
+            "Xrm.Page.ui.formSelector.items.get(formindex).navigate()"
+         ]
+      }
+   },
+   {
+      "Add OnPostSearch (8.1+)":{
+         "prefix":"Xrm.Page.getControl().addOnPostSearch() (8.1+)",
+         "description":"Use this method to add an event handler to the PostSearch event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").addOnPostSearch(functionName)"
+         ]
+      }
+   },
+   {
+      "Add OnResultOpened (7.1+)":{
+         "prefix":"Xrm.Page.getControl().addOnResultOpened() (7.1+)",
+         "description":"Use this method to add an event handler to the OnResultOpened event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").addOnResultOpened(functionName)"
+         ]
+      }
+   },
+   {
+      "Add OnSelection (7.1+)":{
+         "prefix":"Xrm.Page.getControl().addOnSelection() (7.1+)",
+         "description":"Use this method to add an event handler to the OnSelection event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").addOnSelection(functionName)"
+         ]
+      }
+   },
+   {
+      "KB Get Label (8.0+)":{
+         "prefix":"Xrm.Page.getControl().getLabel() (8.0+)",
+         "description":"Returns the label for the control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getLabel()"
+         ]
+      }
+   },
+   {
+      "Get Parature Control (7.1+)":{
+         "prefix":"Xrm.Page.getControl() (7.1+)",
+         "description":"Returns a reference to the knowledge base search control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\")"
+         ]
+      }
+   },
+   {
+      "Get Search Query (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getSearchQuery() (7.1+)",
+         "description":"Use this method to get the text used as the search criteria for the knowledge base management control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getSearchQuery()"
+         ]
+      }
+   },
+   {
+      "Get Selected Result (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getSelectedResult() (7.1+)",
+         "description":"Use this method to get the currently selected result of the search control. The currently selected result also represents the result that is currently open.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getSelectedResult()"
+         ]
+      }
+   },
+   {
+      "Get TotalResultCount (8.1+)":{
+         "prefix":"Xrm.Page.getControl().getTotalResultCount() (8.1+)",
+         "description":"Gets the count of results found in the search control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getTotalResultCount()"
+         ]
+      }
+   },
+   {
+      "Open Search Result (8.1+)":{
+         "prefix":"Xrm.Page.getControl().openSearchResult() (8.1+)",
+         "description":"Opens a search result in the search control by specifying the result number.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").openSearchResult(index, \"Inline\"|\"Popout\")"
+         ]
+      }
+   },
+   {
+      "Remove OnPostSearch (8.1+)":{
+         "prefix":"Xrm.Page.getControl().removeOnPostSearch() (8.1+)",
+         "description":"Use this method to remove an event handler from the PostSearch event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").removeOnPostSearch(functionName)"
+         ]
+      }
+   },
+   {
+      "Remove OnResultOpened (7.1+)":{
+         "prefix":"Xrm.Page.getControl().removeOnResultOpened() (7.1+)",
+         "description":"Use this method to remove an event handler from the OnResultOpened event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").removeOnResultOpened(functionName)"
+         ]
+      }
+   },
+   {
+      "Remove OnSelection (7.1+)":{
+         "prefix":"Xrm.Page.getControl().removeOnSelection() (7.1+)",
+         "description":"Use this method to remove an event handler from the OnSelection event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").removeOnSelection(functionName)"
+         ]
+      }
+   },
+   {
+      "KB Set Label (8.0+)":{
+         "prefix":"Xrm.Page.getControl().setLabel() (8.0+)",
+         "description":"Sets the label for the control.",
+         "body":[
+            "Xrm.Page.getControl(\"fieldname\").setLabel(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Search Query (7.1+)":{
+         "prefix":"Xrm.Page.getControl().setSearchQuery() (7.1+)",
+         "description":"Use this method to set the text used as the search criteria for the knowledge base management control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").setSearchQuery(\"value\")"
+         ]
+      }
+   },
+   {
+      "Get Navigation Id (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().getId() (5.0+)",
+         "description":"Returns the name of the item.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getId()"
+         ]
+      }
+   },
+   {
+      "Get Navigation Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().getLabel() (5.0+)",
+         "description":"Returns the label for the item.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getLabel()"
+         ]
+      }
+   },
+   {
+      "Get Navigation Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().getVisible() (5.0+)",
+         "description":"Returns a value that indicates whether the item is currently visible.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getVisible()"
+         ]
+      }
+   },
+   {
+      "Set Navigation Focu (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().setFocus() (5.0+)",
+         "description":"Sets the focus on the item.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setFocus()"
+         ]
+      }
+   },
+   {
+      "Set Navigation Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().setLabel() (5.0+)",
+         "description":"Sets the label for the item.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setLabel(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Navigation Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.navigation.items.get().setVisible() (5.0+)",
+         "description":"Sets a value that indicates whether the item is visible.",
+         "body":[
+            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setVisible(true|false)"
+         ]
+      }
+   },
+   {
+      "Get Process Id (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getId() (7.0+)",
+         "description":"Returns the unique identifier of the process.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getId()"
+         ]
+      }
+   },
+   {
+      "Get Process Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getName() (7.0+)",
+         "description":"Returns the name of the process.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getName()"
+         ]
+      }
+   },
+   {
+      "Get Sections (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages() (7.0+)",
+         "description":"Returns an collection of stages in the process.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages()"
+         ]
+      }
+   },
+   {
+      "Is Rendered(7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().isRendered() (7.0+)",
+         "description":"Returns true if the process is rendered, false if not.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().isRendered()"
+         ]
+      }
+   },
+   {
+      "Get Save Mode (5.0+)":{
+         "prefix":"Xrm.execObj.getEventArgs().getSaveMode() (5.0+)",
+         "description":"Returns a value indicating how the save event was initiated by the user.",
+         "body":[
+            "execObj.getEventArgs().getSaveMode()"
+         ]
+      }
+   },
+   {
+      "Is Default Prevented (5.0+)":{
+         "prefix":"Xrm.execObj.getEventArgs().isDefaultPrevented() (5.0+)",
+         "description":"Returns a value indicating whether the save event has been canceled because the preventDefault method was used in this event hander or a previous event handler.",
+         "body":[
+            "execObj.getEventArgs().isDefaultPrevented()"
+         ]
+      }
+   },
+   {
+      "Prevent Default (5.0+)":{
+         "prefix":"Xrm.execObj.getEventArgs().preventDefault() (5.0+)",
+         "description":"Cancels the save operation, but all remaining handlers for the event will still be executed.",
+         "body":[
+            "execObj.getEventArgs().preventDefault()"
+         ]
+      }
+   },
+   {
+      "Get Context (5.0+)":{
+         "prefix":"Xrm.execObj.getContext() (5.0+)",
+         "description":"Returns the Xrm.Page.context object.",
+         "body":[
+            "execObj.getContext()"
+         ]
+      }
+   },
+   {
+      "Get Depth (5.0+)":{
+         "prefix":"Xrm.execObj.getDepth() (5.0+)",
+         "description":"Returns a value that indicates the order in which this handler is executed.",
+         "body":[
+            "execObj.getDepth()"
+         ]
+      }
+   },
+   {
+      "Get Event Source (5.0+)":{
+         "prefix":"Xrm.execObj.getEventSource() (5.0+)",
+         "description":"Returns a reference to the object that the event occurred on.",
+         "body":[
+            "execObj.getEventSource()"
+         ]
+      }
+   },
+   {
+      "Get Shared Variable (5.0+)":{
+         "prefix":"Xrm.execObj.getSharedVariable() (5.0+)",
+         "description":"Retrieves a variable set using setSharedVariable.",
+         "body":[
+            "execObj.getSharedVariable(\"key\")"
+         ]
+      }
+   },
+   {
+      "Set Shared Variable (5.0+)":{
+         "prefix":"Xrm.execObj.setSharedVariable() (5.0+)",
+         "description":"Sets the value of a variable to be used by a handler after the current handler completes.",
+         "body":[
+            "execObj.setSharedVariable(\"key\", value)"
+         ]
+      }
+   },
+   {
+      "Get Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().getLabel() (5.0+)",
+         "description":"Returns the label for the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getLabel()"
+         ]
+      }
+   },
+   {
+      "Get Name (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().getName() (5.0+)",
+         "description":"Method to return the name of the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getName()"
+         ]
+      }
+   },
+   {
+      "Get Parent (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().getParent() (5.0+)",
+         "description":"Method to return the tab containing the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getParent()"
+         ]
+      }
+   },
+   {
+      "Get Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().getVisible() (5.0+)",
+         "description":"Returns true if the section is visible, otherwise returns false.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getVisible()"
+         ]
+      }
+   },
+   {
+      "Set Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().setLabel() (5.0+)",
+         "description":"Sets the label for the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).setLabel(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().sections.get().setVisible() (5.0+)",
+         "description":"Sets a value to show or hide the section.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).setVisible(true|false)"
+         ]
+      }
+   },
+   {
+      "Get Category (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getCategory().getValue() (7.0+)",
+         "description":"Returns an object with a getValue method which will return the integer value of the business process flow category.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getCategory().getValue()"
+         ]
+      }
+   },
+   {
+      "Get Entity Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getStages().getCategory().getValue().getEntityName() (7.0+)",
+         "description":"Returns the logical name of the entity associated with the stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getEntityName()"
+         ]
+      }
+   },
+   {
+      "Get Id (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getId() (7.0+)",
+         "description":"Returns the unique identifier of the stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getId()"
+         ]
+      }
+   },
+   {
+      "Get Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getName() (7.0+)",
+         "description":"Returns the name of the stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getName()"
+         ]
+      }
+   },
+   {
+      "Get Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getStatus() (7.0+)",
+         "description":"Returns the status of the stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getStatus()"
+         ]
+      }
+   },
+   {
+      "Get Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getSteps() (7.0+)",
+         "description":"Returns the status of the stage.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getSteps()"
+         ]
+      }
+   },
+   {
+      "Get Attribute (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getSteps().get().getAttribute() (7.0+)",
+         "description":"Returns the logical name of the attribute associated to the step.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getSteps().get(stepindex).getAttribute()"
+         ]
+      }
+   },
+   {
+      "Get Name (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getSteps().get().getAttribute().getName() (7.0+)",
+         "description":"Returns the name of the step.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getSteps().get(stepindex).getName()"
+         ]
+      }
+   },
+   {
+      "IsRequired (7.0+)":{
+         "prefix":"Xrm.Page.data.process.getActiveProcess().getStages().get().getSteps().get().getAttribute().isRequired() (7.0+)",
+         "description":"Returns whether the step is required in the business process flow.",
+         "body":[
+            "Xrm.Page.data.process.getActiveProcess().getStages().get(stageindex).getSteps().get(stepindex).isRequired()"
+         ]
+      }
+   },
+   {
+      "Add Grid OnLoad (7.1+)":{
+         "prefix":"Xrm.Page.getControl().addOnLoad() (7.1+)",
+         "description":"Use this method to add event handlers to the GridControlOnLoad event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").addOnLoad(functionName)"
+         ]
+      }
+   },
+   {
+      "Get Grid (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid() (7.1+)",
+         "description":"Use this method to get access to the Grid available in the GridControl.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid()"
+         ]
+      }
+   },
+   {
+      "Get Grid Control (7.1+)":{
+         "prefix":"Xrm.Page.getControl() (7.1+)",
+         "description":"Returns the grid control.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\")"
+         ]
+      }
+   },
+   {
+      "Get Grid Current View (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getViewSelector().getCurrentView() (7.1+)",
+         "description":"Use this method to get a reference to the current view.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getViewSelector().getCurrentView()"
+         ]
+      }
+   },
+   {
+      "Get Grid Entity Name (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getEntityName() (7.1+)",
+         "description":"Use this method to get the logical name of the entity data displayed in the grid.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getEntityName()"
+         ]
+      }
+   },
+   {
+      "Get Row Data (7.1+)":{
+         "prefix":"Xrm.Page.getControl(\"controlname\").getGrid().getRows().get().getData() (7.1+)",
+         "description":"Returns the GridRowData for the GridRow.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData()"
+         ]
+      }
+   },
+   {
+      "Get Row Entity (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity() (7.1+)",
+         "description":"Returns the GridEntity for the GridRowData.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity()"
+         ]
+      }
+   },
+   {
+      "Get Row Entity Id (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows().getData().get().getEntity().getData().getEntity().getId() (7.1+)",
+         "description":"Returns the id for the record in the row.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getId()"
+         ]
+      }
+   },
+   {
+      "Get Row Entity Name (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getEntityName() (7.1+)",
+         "description":"Returns the logical name for the record in the row.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getEntityName()"
+         ]
+      }
+   },
+   {
+      "Get Row Entity Primary Attribute Value (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getPrimaryAttributeValue() (7.1+)",
+         "description":"Returns the primary attribute value for the record in the row.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getPrimaryAttributeValue()"
+         ]
+      }
+   },
+   {
+      "Get Row Entity Reference (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getEntityReference() (7.1+)",
+         "description":"Returns the entity reference for the record in the row.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getEntityReference()"
+         ]
+      }
+   },
+   {
+      "Get Rows (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getRows() (7.1+)",
+         "description":"Returns a collection of every GridRow in the Grid.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getRows()"
+         ]
+      }
+   },
+   {
+      "Get Selected Rows (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getSelectedRows() (7.1+)",
+         "description":"Returns a collection of every selected GridRow in the Grid.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getSelectedRows()"
+         ]
+      }
+   },
+   {
+      "Get Total Record Count (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getGrid().getTotalRecordCount() (7.1+)",
+         "description":"Returns the total number of records that match the filter criteria of the view, not limited by the number visible in a single page.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getGrid().getTotalRecordCount()"
+         ]
+      }
+   },
+   {
+      "Get View Selector (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getViewSelector() (7.1+)",
+         "description":"Use this method to get access to the ViewSelector available for the GridControl.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getViewSelector()"
+         ]
+      }
+   },
+   {
+      "Is View Selector Visible (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getViewSelector().isVisible() (7.1+)",
+         "description":"Use this method to determine whether the view selector is visible.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").getViewSelector().isVisible()"
+         ]
+      }
+   },
+   {
+      "Refresh (5.0+)":{
+         "prefix":"Xrm.Page.getControl().refresh() (5.0+)",
+         "description":"Refreshes the data displayed in a subgrid.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").refresh()"
+         ]
+      }
+   },
+   {
+      "Remove Grid OnLoad (7.1+)":{
+         "prefix":"Xrm.Page.getControl().removeOnLoad() (7.1+)",
+         "description":"Use this method to remove event handlers from the GridControlOnLoad event.",
+         "body":[
+            "Xrm.Page.getControl(\"controlname\").removeOnLoad(functionName)"
+         ]
+      }
+   },
+   {
+      "Set Grid Current View (7.1+)":{
+         "prefix":"Xrm.Page.getControl().getViewSelector().setCurrentView() (7.1+)",
+         "description":"Use this method to set the current view.",
+         "body":[
+            "var contactSavedQuery = {",
+            "\tentityType: 1039, // SavedQuery",
+            "\tid: \"3A282DA1-5D90-E011-95AE-00155D9CFA02\",",
+            "\tname: \"Contacts Saved Query\"",
+            "}",
+            "",
+            "Xrm.Page.getControl(\"controlname\").getViewSelector().setCurrentView(contactSavedQuery);"
+         ]
+      }
+   },
+   {
+      "Get Display State (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().getDisplayState() (5.0+)",
+         "description":"Returns a value that indicates whether the tab is collapsed or expanded.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getDisplayState()"
+         ]
+      }
+   },
+   {
+      "Get Tab Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().getLabel() (5.0+)",
+         "description":"Returns the tab label.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getLabel()"
+         ]
+      }
+   },
+   {
+      "Get Tab Name (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().getName() (5.0+)",
+         "description":"Returns the name of the tab.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getName()"
+         ]
+      }
+   },
+   {
+      "Get Tab Parent (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().getParent() (5.0+)",
+         "description":"Returns the Xrm.Page.ui (client-side reference) object.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getParent()"
+         ]
+      }
+   },
+   {
+      "Get Tab Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().getVisible() (5.0+)",
+         "description":"Returns a value that indicates whether the tab is visible.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getVisible()"
+         ]
+      }
+   },
+   {
+      "Set Tab Display State (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().setDisplayState() (5.0+)",
+         "description":"Sets the tab to be collapsed or expanded.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setDisplayState(\"expanded\"|\"collapsed\")"
+         ]
+      }
+   },
+   {
+      "Set Tab Focus (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().setFocus() (5.0+)",
+         "description":"Sets the focus on the tab.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setFocus()"
+         ]
+      }
+   },
+   {
+      "Set Tab Label (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().setLabel() (5.0+)",
+         "description":"Sets the label for the tab.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setLabel(\"value\")"
+         ]
+      }
+   },
+   {
+      "Set Tab Visible (5.0+)":{
+         "prefix":"Xrm.Page.ui.tabs.get().setVisible() (5.0+)",
+         "description":"Sets a value that indicates whether the control is visible.",
+         "body":[
+            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setVisible(true|false)"
+         ]
+      }
+   },
+   {
+      "Clear Form Notification (6.0+)":{
+         "prefix":"Xrm.Page.ui.clearFormNotification() (6.0+)",
+         "description":"Use this method to remove form level notifications.",
+         "body":[
+            "Xrm.Page.ui.clearFormNotification(\"uniqueId\")"
+         ]
+      }
+   },
+   {
+      "Get Current Control (5.0+)":{
+         "prefix":"Xrm.Page.ui.getCurrentControl() (5.0+)",
+         "description":"Method to get the control object that currently has focus on the form. Web Resource and IFRAME controls are not returned by this method.",
+         "body":[
+            "Xrm.Page.ui.getCurrentControl()"
+         ]
+      }
+   },
+   {
+      "Close (5.0+)":{
+         "prefix":"Xrm.Page.ui.close() (5.0+)",
+         "description":"Method to close the form.",
+         "body":[
+            "Xrm.Page.ui.close()"
+         ]
+      }
+   },
+   {
+      "Get Form Type (5.0+)":{
+         "prefix":"Xrm.Page.ui.getFormType() (5.0+)",
+         "description":"Method to get the form context for the record.",
+         "body":[
+            "Xrm.Page.ui.getFormType()"
+         ]
+      }
+   },
+   {
+      "Get ViewPort Width(5.0+)":{
+         "prefix":"Xrm.Page.ui.getViewPortWidth() (5.0+)",
+         "description":"Method to get the width of the viewport in pixels.",
+         "body":[
+            "Xrm.Page.ui.getViewPortWidth()"
+         ]
+      }
+   },
+   {
+      "Get ViewPort Height (5.0+)":{
+         "prefix":"Xrm.Page.ui.getViewPortHeight() (5.0+)",
+         "description":"Method to get the height of the viewport in pixels.",
+         "body":[
+            "Xrm.Page.ui.getViewPortHeight()"
+         ]
+      }
+   },
+   {
+      "Refresh Ribbon (5.0+)":{
+         "prefix":"Xrm.Page.ui.refreshRibbon() (5.0+)",
+         "description":"Method to cause the ribbon to re-evaluate data that controls what is displayed in it.",
+         "body":[
+            "Xrm.Page.ui.refreshRibbon()"
+         ]
+      }
+   },
+   {
+      "Set Form Notification (6.0+)":{
+         "prefix":"Xrm.Page.ui.setFormNotification() (6.0+)",
+         "description":"Use this method to display form level notifications.",
+         "body":[
+            "Xrm.Page.ui.setFormNotification(\"message\", \"ERROR\"|\"WARNING\"|\"INFO\", \"uniqueId\")"
+         ]
+      }
+   },
+   {
+      "Alert Dialog (6.0+)":{
+         "prefix":"Xrm.Utility.alertDialog() (6.0+)",
+         "description":"Displays a dialog box containing an application-defined message.",
+         "body":[
+            "Xrm.Utility.alertDialog(\"message\", [functionName])"
+         ]
+      }
+   },
+   {
+      "Confirm Dialog (6.0+)":{
+         "prefix":"Xrm.Utility.confirmDialog() (6.0+)",
+         "description":"Displays a confirmation dialog box that contains an optional message as well as OK and Cancel buttons.",
+         "body":[
+            "Xrm.Utility.confirmDialog(\"message\", [yesFunctionName], [noFunctionName])"
+         ]
+      }
+   },
+   {
+      "Is Activity Type (6.0+)":{
+         "prefix":"Xrm.Utility.isActivityType() (6.0+)",
+         "description":"Determine if an entity is an activity entity.",
+         "body":[
+            "Xrm.Utility.isActivityType(\"entityName\")"
+         ]
+      }
+   },
+   {
+      "Open Entity Form (5.0+)":{
+         "prefix":"Xrm.Utility.openEntityForm() (5.0+)",
+         "description":"Opens an entity form.",
+         "body":[
+            "var name = \"account\";",
+            "var id = \"5D24B2A7-957A-4D08-8723-2CEF5219FFA0\";",
+            "var parameters = {};",
+            "parameters[\"formid\"] = \"b053a39a-041a-4356-acef-ddf00182762b\";",
+            "parameters[\"name\"] = \"Test\";",
+            "var windowOptions = {",
+            "\topenInNewWindow: true",
+            "};",
+            "",
+            "Xrm.Utility.openEntityForm(name, id, parameters, windowOptions);"
+         ]
+      }
+   },
+   {
+      "Open Quick Create (7.1+)":{
+         "prefix":"Xrm.Utility.openQuickCreate() (7.1+)",
+         "description":"Opens a new quick create form.",
+         "body":[
+            "var entityName = \"account\";",
+            "var createFromEntity = { entityType: \"account\", id: Xrm.Page.data.entity.getId() };",
+            "var parameters = {};",
+            "parameters[\"name\"] = \"Test\";",
+            "",
+            "Xrm.Utility.openQuickCreate(entityName, [createFromEntity], [parameters]).then([successFunction], [errorFunction]);"
+         ]
+      }
+   },
+   {
+      "Open Web Resource (5.0+)":{
+         "prefix":"Xrm.Utility.openWebResource() (5.0+)",
+         "description":"Opens an HTML web resource.",
+         "body":[
+            "var webResourceName = \"new_webResource.htm\";",
+            "var webResourceData = encodeURIComponent(\"first=First Value&second=Second Value\");",
+            "var parameters = {};",
+            "var width = 300;",
+            "var height = 300;",
+            "",
+            "Xrm.Utility.openWebResource(webResourceName, webResourceData, width, height);"
+         ]
+      }
+   }
+]

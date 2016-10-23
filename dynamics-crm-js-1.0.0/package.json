@@ -1,0 +1,31 @@
+{
+    "name": "dynamics-crm-js",
+    "publisher": "JLattimer",
+    "description": "JavaScript snippets for Dynamics CRM 2011/2013/2015/2016",
+    "displayName": "JavaScript snippets for Dynamics CRM 2011/2013/2015/2016",
+    "version": "1.0.0",
+	"author": "Jason Lattimer",
+    "engines": { "vscode": "0.10.x" },
+    "icon": "images/dynamics-crm-js.png",
+    "bugs": {
+		"url": "https://github.com/jlattimer/CRMVSCodeJSSnippets/issues"
+	},
+    "galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/jlattimer/CRMVSCodeJSSnippets.git"
+	},
+    "keywords": ["Dynamics CRM", "JavaScript"],
+    "categories": ["Snippets"], 
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    }
+}
