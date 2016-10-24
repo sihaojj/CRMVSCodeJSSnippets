@@ -4,7 +4,7 @@
          "prefix":"Xrm.Page.getAttribute().addOnChange() (5.0+)",
          "description":"Sets a function to be called when the attribute value is changed.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").addOnChange(functionName)"
+            "Xrm.Page.getAttribute(\"${fieldname}\").addOnChange(${functionName})"
          ]
       }
    },
@@ -13,7 +13,7 @@
          "prefix":"Xrm.Page.getAttribute().fireOnChange() (5.0+)",
          "description":"Causes the OnChange event to occur on the attribute so that any script associated to that event can execute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").fireOnChange()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").fireOnChange()"
          ]
       }
    },
@@ -22,7 +22,7 @@
          "prefix":"Xrm.Page.getAttribute().getName() (5.0+)",
          "description":"Returns a string representing the logical name of the attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getName()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getName()"
          ]
       }
    },
@@ -31,7 +31,7 @@
          "prefix":"Xrm.Page.getAttribute().getAttributeType() (5.0+)",
          "description":"Returns a string value that represents the type of attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getAttributeType()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getAttributeType()"
          ]
       }
    },
@@ -40,7 +40,7 @@
          "prefix":"Xrm.Page.getAttribute().getFormat() (5.0+)",
          "description":"Returns a string value that represents formatting options for the attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getFormat()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getFormat()"
          ]
       }
    },
@@ -49,7 +49,7 @@
          "prefix":"Xrm.Page.getAttribute().getInitialValue() (5.0+)",
          "description":"Returns a value that represents the value set for an OptionSet or Boolean attribute when the form opened.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getInitialValue()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getInitialValue()"
          ]
       }
    },
@@ -58,7 +58,7 @@
          "prefix":"Xrm.Page.getAttribute().getIsDirty() (5.0+)",
          "description":"Returns a Boolean value indicating if there are unsaved changes to the attribute value.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getIsDirty()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getIsDirty()"
          ]
       }
    },
@@ -67,7 +67,7 @@
          "prefix":"Xrm.Page.getAttribute().getIsPartyList() (6.0+)",
          "description":"Returns a Boolean value indicating whether the lookup represents a partylist lookup. Partylist lookups allow for multiple records to be set, such as the To: field for an email entity record.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getIsPartyList()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getIsPartyList()"
          ]
       }
    },
@@ -76,7 +76,7 @@
          "prefix":"Xrm.Page.getAttribute().getMax() (5.0+)",
          "description":"Returns a number indicating the maximum allowed value for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getMax()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getMax()"
          ]
       }
    },
@@ -85,7 +85,7 @@
          "prefix":"Xrm.Page.getAttribute().getMaxLength() (5.0+)",
          "description":"Returns a number indicating the maximum length of a string or memo attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getMaxLength()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getMaxLength()"
          ]
       }
    },
@@ -94,7 +94,7 @@
          "prefix":"Xrm.Page.getAttribute().getMin() (5.0+)",
          "description":"Returns a number indicating the minimum allowed value for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getMin()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getMin()"
          ]
       }
    },
@@ -103,7 +103,7 @@
          "prefix":"Xrm.Page.getAttribute().getOption() (5.0+)",
          "description":"Returns an option object with the value matching the argument passed to the method.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getOption(value)"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getOption(value)"
          ]
       }
    },
@@ -112,7 +112,7 @@
          "prefix":"Xrm.Page.getAttribute().getOptions() (5.0+)",
          "description":"Returns an array of option objects representing the valid options for an optionset attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getOptions()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getOptions()"
          ]
       }
    },
@@ -121,7 +121,7 @@
          "prefix":"Xrm.Page.getAttribute().getParent() (5.0+)",
          "description":"Returns the Xrm.Page.data.entity object that is the parent to all attributes.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getParent()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getParent()"
          ]
       }
    },
@@ -130,7 +130,7 @@
          "prefix":"Xrm.Page.getAttribute().getPrecision() (5.0+)",
          "description":"Returns the number of digits allowed to the right of the decimal point.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getPrecision()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getPrecision()"
          ]
       }
    },
@@ -139,7 +139,7 @@
          "prefix":"Xrm.Page.getAttribute().getRequiredLevel() (5.0+)",
          "description":"Returns a string value indicating whether a value for the attribute is required or recommended.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getRequiredLevel()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getRequiredLevel()"
          ]
       }
    },
@@ -148,7 +148,7 @@
          "prefix":"Xrm.Page.getAttribute().getSelectedOption() (5.0+)",
          "description":"Returns the option object that is selected in an optionset attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getSelectedOption()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getSelectedOption()"
          ]
       }
    },
@@ -157,7 +157,7 @@
          "prefix":"Xrm.Page.getAttribute().getSubmitMode() (5.0+)",
          "description":"Returns a string indicating when data from the attribute will be submitted when the record is saved.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getSubmitMode()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getSubmitMode()"
          ]
       }
    },
@@ -166,7 +166,7 @@
          "prefix":"Xrm.Page.getAttribute().getText() (5.0+)",
          "description":"Returns a string value of the text for the currently selected option for an optionset attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getText()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getText()"
          ]
       }
    },
@@ -175,7 +175,7 @@
          "prefix":"Xrm.Page.getAttribute().getUserPrivilege() (5.0+)",
          "description":"Returns an object with three Boolean properties corresponding to privileges indicating if the user can create, read or update data values for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getUserPrivilege()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getUserPrivilege()"
          ]
       }
    },
@@ -184,7 +184,7 @@
          "prefix":"Xrm.Page.getAttribute().getValue() (5.0+)",
          "description":"Retrieves the data value for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").getValue()"
+            "Xrm.Page.getAttribute(\"${fieldname}\").getValue()"
          ]
       }
    },
@@ -193,7 +193,7 @@
          "prefix":"Xrm.Page.getAttribute().removeOnChange() (5.0+)",
          "description":"Removes a function from the OnChange event hander for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").removeOnChange(functionName)"
+            "Xrm.Page.getAttribute(\"${fieldname}\").removeOnChange(${functionName})"
          ]
       }
    },
@@ -202,7 +202,7 @@
          "prefix":"Xrm.Page.getAttribute().setRequiredLevel() (5.0+)",
          "description":"Sets whether data is required or recommended for the attribute before the record can be saved.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").setRequiredLevel(\"none\"|\"required\"|\"recommended\")"
+            "Xrm.Page.getAttribute(\"${fieldname}\").setRequiredLevel(\"${none|required|recommended}\")"
          ]
       }
    },
@@ -211,7 +211,7 @@
          "prefix":"Xrm.Page.getAttribute().setSubmitMode() (5.0+)",
          "description":"Sets whether data from the attribute will be submitted when the record is saved.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").setSubmitMode(\"always\"|\"never\"|\"dirty\")"
+            "Xrm.Page.getAttribute(\"${fieldname}\").setSubmitMode(\"${always|never|dirty}\")"
          ]
       }
    },
@@ -220,7 +220,7 @@
          "prefix":"Xrm.Page.getAttribute().setValue() (5.0+)",
          "description":"Sets the data value for an attribute.",
          "body":[
-            "Xrm.Page.getAttribute(\"fieldname\").setValue(\"value\")"
+            "Xrm.Page.getAttribute(\"${fieldname}\").setValue(\"${value}\")"
          ]
       }
    },
@@ -229,7 +229,7 @@
          "prefix":"Xrm.Page.data.process.addOnStageChange() (7.0+)",
          "description":"Use these methods to add or remove event handlers for the business process flow control.",
          "body":[
-            "Xrm.Page.data.process.addOnStageChange([functionName])"
+            "Xrm.Page.data.process.addOnStageChange(${functionName})"
          ]
       }
    },
@@ -238,7 +238,7 @@
          "prefix":"Xrm.Page.data.process.addOnStageSelected() (7.0+)",
          "description":"Use this to add a function as an event handler for the OnStageSelected event so that it will be called when a business process flow stage is selected.",
          "body":[
-            "Xrm.Page.data.process.addOnStageSelected([functionName])"
+            "Xrm.Page.data.process.addOnStageSelected(${functionName})"
          ]
       }
    },
@@ -283,7 +283,7 @@
          "prefix":"Xrm.Page.data.process.getEnabledProcesses() (7.0+)",
          "description":"Use this method to asynchronously retrieve the enabled business process flows that the user can switch to for an entity.",
          "body":[
-            "Xrm.Page.data.process.getEnabledProcesses([callbackFunctionName(enabledProcesses)])"
+            "Xrm.Page.data.process.getEnabledProcesses([${callbackfunctionName}(enabledProcesses)])"
          ]
       }
    },
@@ -310,7 +310,7 @@
          "prefix":"Xrm.Page.data.process.moveNext() (7.0+)",
          "description":"Progresses to the next stage.",
          "body":[
-            "Xrm.Page.data.process.moveNext([callbackFunctionName])"
+            "Xrm.Page.data.process.moveNext(${callbackfunctionName})"
          ]
       }
    },
@@ -319,7 +319,7 @@
          "prefix":"Xrm.Page.data.process.movePrevious() (7.0+)",
          "description":"Moves to the previous stage. With Microsoft Dynamics CRM Online 2015 Update 1 you can use movePrevious to a previous stage in a different entity.",
          "body":[
-            "Xrm.Page.data.process.movePrevious([callbackFunctionName])"
+            "Xrm.Page.data.process.movePrevious(${callbackfunctionName})"
          ]
       }
    },
@@ -328,7 +328,7 @@
          "prefix":"Xrm.Page.data.process.removeOnStageChange() (7.0+)",
          "description":"Use this to remove a function as an event handler for the OnStageChange event.",
          "body":[
-            "Xrm.Page.data.process.removeOnStageChange([functionName])"
+            "Xrm.Page.data.process.removeOnStageChange(${functionName})"
          ]
       }
    },
@@ -337,7 +337,7 @@
          "prefix":"Xrm.Page.data.process.removeOnStageSelected() (7.0+)",
          "description":"Use this to remove a function as an event handler for the OnStageSelected event.",
          "body":[
-            "Xrm.Page.data.process.removeOnStageSelected([functionName])"
+            "Xrm.Page.data.process.removeOnStageSelected(${functionName})"
          ]
       }
    },
@@ -346,7 +346,7 @@
          "prefix":"Xrm.Page.data.process.setActiveProcess() (7.0+)",
          "description":"Set a Process as the active process.",
          "body":[
-            "Xrm.Page.data.process.setActiveProcess(\"processId\", [callbackFunctionName])"
+            "Xrm.Page.data.process.setActiveProcess(\"processId\", ${callbackfunctionName})"
          ]
       }
    },
@@ -355,7 +355,7 @@
          "prefix":"Xrm.Page.data.process.setActiveStage() (7.0+)",
          "description":"Set a completed stage as the active stage.",
          "body":[
-            "Xrm.Page.data.process.setActiveStage(\"stageId\", [callbackFunctionName])"
+            "Xrm.Page.data.process.setActiveStage(\"stageId\", ${callbackfunctionName})"
          ]
       }
    },
@@ -364,7 +364,7 @@
          "prefix":"Xrm.Page.ui.process.setDisplayState() (7.0+)",
          "description":"Use this method to expand or collapse the business process flow control.",
          "body":[
-            "Xrm.Page.ui.process.setDisplayState(\"expanded\"|\"collapsed\")"
+            "Xrm.Page.ui.process.setDisplayState(\"${expanded|collapsed}\")"
          ]
       }
    },
@@ -373,7 +373,7 @@
          "prefix":"Xrm.Page.ui.process.setVisible() (7.0+)",
          "description":"Use this method to show or hide the business process flow control.",
          "body":[
-            "Xrm.Page.ui.process.setVisible(true|false)"
+            "Xrm.Page.ui.process.setVisible(${true|false})"
          ]
       }
    },
@@ -383,7 +383,7 @@
          "description":"Apply an action in a delegate function to each object in the collection of attributes.",
          "body":[
             "Xrm.Page.data.entity.attributes.forEach(function (control, index) {",
-            "",
+            "${functionbody}",
             "})"
          ]
       }
@@ -394,7 +394,7 @@
          "description":"Apply an action in a delegate function to each object in the collection of controls.",
          "body":[
             "Xrm.Page.ui.controls.forEach(function (control, index) {",
-            "",
+            "${functionbody}",
             "})"
          ]
       }
@@ -405,7 +405,7 @@
          "description":"Apply an action in a delegate function to each object in the collection of forms.",
          "body":[
             "Xrm.Page.ui.formSelector.items.forEach(function (control, index) {",
-            "",
+            "${functionbody}",
             "})"
          ]
       }
@@ -416,7 +416,7 @@
          "description":"Apply an action in a delegate function to each object in the collection of navigation items.",
          "body":[
             "Xrm.Page.ui.navigation.items.forEach(function (control, index) {",
-            "",
+            "${functionbody}",
             "})"
          ]
       }
@@ -426,8 +426,8 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.forEach() (5.0+)",
          "description":"Apply an action in a delegate function to each object in the collection of sections.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.forEach(function (control, index) {",
-            "",
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.forEach(function (control, index) {",
+            "${functionbody}",
             "})"
          ]
       }
@@ -437,8 +437,8 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().controls.forEach() (5.0+)",
          "description":"Apply an action in a delegate function to each object in the collection of controls in a section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).controls.forEach(function (control, index) {",
-            "",
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).controls.forEach(function (control, index) {",
+            "${functionbody}",
             "})"
          ]
       }
@@ -449,7 +449,7 @@
          "description":"Apply an action in a delegate function to each object in the collection of tabs.",
          "body":[
             "Xrm.Page.ui.tabs.forEach(function (control, index) {",
-            "",
+            "${functionbody}",
             "})"
          ]
       }
@@ -531,7 +531,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().controls.get() (5.0+)",
          "description":"A collection of all the controls in the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).controls.get()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).controls.get()"
          ]
       }
    },
@@ -540,7 +540,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get() (5.0+)",
          "description":"A collection of all the sections in a tab.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get()"
          ]
       }
    },
@@ -549,7 +549,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.getLength() (5.0+)",
          "description":"Get the number of items in the collection of sections.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.getLength()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.getLength()"
          ]
       }
    },
@@ -558,7 +558,7 @@
          "prefix":"Xrm.Page.ui.tabs.get() (5.0+)",
          "description":"A collection of all the tabs on the page.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex)"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex})"
          ]
       }
    },
@@ -720,7 +720,7 @@
          "prefix":"Xrm.Page.context.prependOrgName() (5.0+)",
          "description":"Prepends the organization name to the specified path.",
          "body":[
-            "Xrm.Page.context.prependOrgName(\"path\")"
+            "Xrm.Page.context.prependOrgName(\"${path}\")"
          ]
       }
    },
@@ -732,7 +732,7 @@
             "var entityName = \"account\";",
             "var filter = \"<filter type='and'><condition attribute='name' operator='eq' value='test' /></filter>\";",
             "",
-            "Xrm.Page.getControl(\"fieldname\").addCustomFilter(filter, entityName);"
+            "Xrm.Page.getControl(\"${fieldname}\").addCustomFilter(filter, entityName);"
          ]
       }
    },
@@ -761,7 +761,7 @@
             "\t\"</grid>\";",
             "var isDefault = true;",
             "",
-            "Xrm.Page.getControl(\"fieldname\").addCustomView(viewId, entityName, viewDisplayName, fetchXml, layoutXml, isDefault);"
+            "Xrm.Page.getControl(\"${fieldname}\").addCustomView(viewId, entityName, viewDisplayName, fetchXml, layoutXml, isDefault);"
          ]
       }
    },
@@ -770,7 +770,7 @@
          "prefix":"Xrm.Page.getControl().addOnKeyPress() (8.0+)",
          "description":"Use this to add a function as an event handler for the keypress event so that the function is called when you type a character in the specific text or number field.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").addOnKeyPress(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").addOnKeyPress(${functionName})"
          ]
       }
    },
@@ -779,7 +779,7 @@
          "prefix":"Xrm.Page.getControl().addOption() (5.0+)",
          "description":"Adds an option to an option set control.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").addOption(option, [index])"
+            "Xrm.Page.getControl(\"${fieldname}\").addOption(${option}, ${[index]})"
          ]
       }
    },
@@ -788,7 +788,7 @@
          "prefix":"Xrm.Page.getControl().addPreSearch() (6.0+)",
          "description":"Use this method to apply changes to lookups based on values current just as the user is about to view results for the lookup.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").addPreSearch(functionName)"
+            "Xrm.Page.getControl(\"${fieldname}\").addPreSearch(${functionName})"
          ]
       }
    },
@@ -797,7 +797,7 @@
          "prefix":"Xrm.Page.getControl().clearNotification() (6.0+)",
          "description":"Remove a message already displayed for a control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").clearNotification(\"uniqueId\")"
+            "Xrm.Page.getControl(\"${controlname}\").clearNotification(\"${uniqueId}\")"
          ]
       }
    },
@@ -806,7 +806,7 @@
          "prefix":"Xrm.Page.getControl().clearOptions() (5.0+)",
          "description":"Clears all options from an option set control.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").clearOptions()"
+            "Xrm.Page.getControl(\"${fieldname}\").clearOptions()"
          ]
       }
    },
@@ -815,7 +815,7 @@
          "prefix":"Xrm.Page.getControl().fireOnKeyPress() (8.0+)",
          "description":"Use this to manually fire an event handler that you created for a specific text or number field to be executed on the keypress event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").fireOnKeyPress()"
+            "Xrm.Page.getControl(\"${controlname}\").fireOnKeyPress()"
          ]
       }
    },
@@ -824,7 +824,7 @@
          "prefix":"Xrm.Page.getControl().getAttribute() (5.0+)",
          "description":"Returns the attribute that the control is bound to.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getAttribute()"
+            "Xrm.Page.getControl(\"${controlname}\").getAttribute()"
          ]
       }
    },
@@ -833,7 +833,7 @@
          "prefix":"Xrm.Page.getControl().getControlType() (5.0+)",
          "description":"Returns a value that categorizes controls.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getControlType()"
+            "Xrm.Page.getControl(\"${controlname}\").getControlType()"
          ]
       }
    },
@@ -842,7 +842,7 @@
          "prefix":"Xrm.Page.getControl().getData() (5.0+)",
          "description":"Returns the value of the data query string parameter passed to a Silverlight web resource.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getData()"
+            "Xrm.Page.getControl(\"${controlname}\").getData()"
          ]
       }
    },
@@ -851,7 +851,7 @@
          "prefix":"Xrm.Page.getControl().getDefaultView() (5.0+)",
          "description":"Returns the Id value of the default lookup dialog view.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").getDefaultView()"
+            "Xrm.Page.getControl(\"${fieldname}\").getDefaultView()"
          ]
       }
    },
@@ -860,7 +860,7 @@
          "prefix":"Xrm.Page.getControl().getDisabled() (5.0+)",
          "description":"Returns whether the control is disabled.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getDisabled()"
+            "Xrm.Page.getControl(\"${controlname}\").getDisabled()"
          ]
       }
    },
@@ -869,7 +869,7 @@
          "prefix":"Xrm.Page.getControl().getInitialUrl() (5.0+)",
          "description":"Returns the default URL that an IFRAME control is configured to display. This method is not available for web resources.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getInitialUrl()"
+            "Xrm.Page.getControl(\"${controlname}\").getInitialUrl()"
          ]
       }
    },
@@ -878,7 +878,7 @@
          "prefix":"Xrm.Page.getControl().getLabel() (5.0+)",
          "description":"Returns the label for the control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getLabel()"
+            "Xrm.Page.getControl(\"${controlname}\").getLabel()"
          ]
       }
    },
@@ -887,7 +887,7 @@
          "prefix":"Xrm.Page.getControl().getName() (5.0+)",
          "description":"Returns the name assigned to the control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getName()"
+            "Xrm.Page.getControl(\"${controlname}\").getName()"
          ]
       }
    },
@@ -896,7 +896,7 @@
          "prefix":"Xrm.Page.getControl().getObject() (5.0+)",
          "description":"Returns the object in the form that represents an I-frame or web resource.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getObject()"
+            "Xrm.Page.getControl(\"${controlname}\").getObject()"
          ]
       }
    },
@@ -905,7 +905,7 @@
          "prefix":"Xrm.Page.getControl().getParent() (5.0+)",
          "description":"Returns a reference to the section object that contains the control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getParent()"
+            "Xrm.Page.getControl(\"${controlname}\").getParent()"
          ]
       }
    },
@@ -914,7 +914,7 @@
          "prefix":"Xrm.Page.getControl().getShowTime() (7.1+)",
          "description":"Get whether a date control shows the time portion of the date.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").getShowTime()"
+            "Xrm.Page.getControl(\"${fieldname}\").getShowTime()"
          ]
       }
    },
@@ -923,7 +923,7 @@
          "prefix":"Xrm.Page.getControl().getSrc() (5.0+)",
          "description":"Returns the current URL being displayed in an IFRAME or web resource.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getSrc()"
+            "Xrm.Page.getControl(\"${controlname}\").getSrc()"
          ]
       }
    },
@@ -932,7 +932,7 @@
          "prefix":"Xrm.Page.getControl().getVisible() (5.0+)",
          "description":"Returns a value that indicates whether the control is currently visible.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getVisible()"
+            "Xrm.Page.getControl(\"${controlname}\").getVisible()"
          ]
       }
    },
@@ -941,7 +941,7 @@
          "prefix":"Xrm.Page.getControl().hideAutoComplete() (8.0+)",
          "description":"Use this function to hide the auto-completion drop-down list you configured for a specific text field.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").hideAutoComplete()"
+            "Xrm.Page.getControl(\"${controlname}\").hideAutoComplete()"
          ]
       }
    },
@@ -950,7 +950,7 @@
          "prefix":"Xrm.Page.getControl().removeOnKeyPress() (8.0+)",
          "description":"Use this to remove an event handler for a text or number field that you added using addOnKeyPress.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").removeOnKeyPress(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").removeOnKeyPress(${functionName})"
          ]
       }
    },
@@ -959,7 +959,7 @@
          "prefix":"Xrm.Page.getControl().removeOption() (5.0+)",
          "description":"Removes an option from an option set control.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").removeOption(number)"
+            "Xrm.Page.getControl(\"${fieldname}\").removeOption(${number})"
          ]
       }
    },
@@ -968,7 +968,7 @@
          "prefix":"Xrm.Page.getControl().removePreSearch() (6.0+)",
          "description":"Use this method to remove event handler functions that have previously been set for the PreSearch event.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").removePreSearch(functionName)"
+            "Xrm.Page.getControl(\"${fieldname}\").removePreSearch(${functionName})"
          ]
       }
    },
@@ -977,7 +977,7 @@
          "prefix":"Xrm.Page.getControl().setData() (5.0+)",
          "description":"Sets the value of the data query string parameter passed to a Silverlight web resource.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setData(value)"
+            "Xrm.Page.getControl(\"${controlname}\").setData(value)"
          ]
       }
    },
@@ -986,7 +986,7 @@
          "prefix":"Xrm.Page.getControl().setDefaultView() (5.0+)",
          "description":"Sets the default view for the lookup control dialog.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").setDefaultView(\"viewId\")"
+            "Xrm.Page.getControl(\"${fieldname}\").setDefaultView(\"${viewId}\")"
          ]
       }
    },
@@ -995,7 +995,7 @@
          "prefix":"Xrm.Page.getControl().setDisabled() (5.0+)",
          "description":"Sets whether the control is disabled.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setDisabled(true|false)"
+            "Xrm.Page.getControl(\"${controlname}\").setDisabled(${true|false})"
          ]
       }
    },
@@ -1004,7 +1004,7 @@
          "prefix":"Xrm.Page.getControl().setFocus() (5.0+)",
          "description":"Sets the focus on the control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setFocus()"
+            "Xrm.Page.getControl(\"${controlname}\").setFocus()"
          ]
       }
    },
@@ -1013,7 +1013,7 @@
          "prefix":"Xrm.Page.getControl().setLabel() (5.0+)",
          "description":"Sets the label for the control.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").setLabel(\"value\")"
+            "Xrm.Page.getControl(\"${fieldname}\").setLabel(\"${value}\")"
          ]
       }
    },
@@ -1022,7 +1022,7 @@
          "prefix":"Xrm.Page.getControl().setNotification() (6.0+)",
          "description":"Display a message near the control to indicate that data isn’t valid.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setNotification(\"message\", \"uniqueId\")"
+            "Xrm.Page.getControl(\"${controlname}\").setNotification(\"${message}\", \"${uniqueId}\")"
          ]
       }
    },
@@ -1031,7 +1031,7 @@
          "prefix":"Xrm.Page.getControl().setShowTime() (6.0+)",
          "description":"Specify whether a date control should show the time portion of the date.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").setShowTime(true|false)"
+            "Xrm.Page.getControl(\"${fieldname}\").setShowTime(${true|false})"
          ]
       }
    },
@@ -1040,7 +1040,7 @@
          "prefix":"Xrm.Page.getControl().setSrc() (5.0+)",
          "description":"Sets the URL to be displayed in an IFRAME or web resource.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setSrc(\"value\")"
+            "Xrm.Page.getControl(\"${controlname}\").setSrc(\"${value}\")"
          ]
       }
    },
@@ -1049,7 +1049,7 @@
          "prefix":"Xrm.Page.getControl().setVisible() (5.0+)",
          "description":"Sets a value that indicates whether the control is visible.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setVisible(true|false)"
+            "Xrm.Page.getControl(\"${controlname}\").setVisible(${true|false})"
          ]
       }
    },
@@ -1058,7 +1058,7 @@
          "prefix":"Xrm.Page.getControl().showAutoComplete() (8.0+)",
          "description":"Use this to show up to 10 matching strings in a drop-down list as users press keys to type character in a specific text field. You can also add a custom command with an icon at the bottom of the drop-down list.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").showAutoComplete(object)"
+            "Xrm.Page.getControl(\"${controlname}\").showAutoComplete(${object})"
          ]
       }
    },
@@ -1067,7 +1067,7 @@
          "prefix":"Xrm.Page.data.entity.addOnSave() (5.0+)",
          "description":"Sets a function to be called when the record is saved.",
          "body":[
-            "Xrm.Page.data.entity.addOnSave(functionName)"
+            "Xrm.Page.data.entity.addOnSave(${functionName})"
          ]
       }
    },
@@ -1121,7 +1121,7 @@
          "prefix":"Xrm.Page.data.entity.removeOnSave() (5.0+)",
          "description":"Removes a function to be called when the record is saved.",
          "body":[
-            "Xrm.Page.data.entity.removeOnSave(functionName)"
+            "Xrm.Page.data.entity.removeOnSave(${functionName})"
          ]
       }
    },
@@ -1130,7 +1130,7 @@
          "prefix":"Xrm.Page.data.entity.save() (5.0+)",
          "description":"Saves the record synchronously with the options to close the form or open a new form after the save is completed.",
          "body":[
-            "Xrm.Page.data.entity.save(null|\"saveandclose\"|\"saveandnew\")"
+            "Xrm.Page.data.entity.save(${null|\"saveandclose\"|\"saveandnew\"})"
          ]
       }
    },
@@ -1139,7 +1139,7 @@
          "prefix":"Xrm.Page.ui.formSelector.items.get().getId() (5.0+)",
          "description":"Returns the GUID ID of the form.",
          "body":[
-            "Xrm.Page.ui.formSelector.items.get(formindex).getId()"
+            "Xrm.Page.ui.formSelector.items.get(\"${formindex}\").getId()"
          ]
       }
    },
@@ -1148,7 +1148,7 @@
          "prefix":"Xrm.Page.ui.formSelector.items.get().getLabel() (5.0+)",
          "description":"Returns the label of the form.",
          "body":[
-            "Xrm.Page.ui.formSelector.items.get(formindex).getLabel()"
+            "Xrm.Page.ui.formSelector.items.get(\"${formindex}\").getLabel()"
          ]
       }
    },
@@ -1157,7 +1157,7 @@
          "prefix":"Xrm.Page.ui.formSelector.items.get().navigate() (5.0+)",
          "description":"Opens the specified form.",
          "body":[
-            "Xrm.Page.ui.formSelector.items.get(formindex).navigate()"
+            "Xrm.Page.ui.formSelector.items.get(\"${formindex}\").navigate()"
          ]
       }
    },
@@ -1166,7 +1166,7 @@
          "prefix":"Xrm.Page.getControl().addOnPostSearch() (8.1+)",
          "description":"Use this method to add an event handler to the PostSearch event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").addOnPostSearch(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").addOnPostSearch(${functionName})"
          ]
       }
    },
@@ -1175,7 +1175,7 @@
          "prefix":"Xrm.Page.getControl().addOnResultOpened() (7.1+)",
          "description":"Use this method to add an event handler to the OnResultOpened event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").addOnResultOpened(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").addOnResultOpened(${functionName})"
          ]
       }
    },
@@ -1184,7 +1184,7 @@
          "prefix":"Xrm.Page.getControl().addOnSelection() (7.1+)",
          "description":"Use this method to add an event handler to the OnSelection event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").addOnSelection(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").addOnSelection(${functionName})"
          ]
       }
    },
@@ -1193,7 +1193,7 @@
          "prefix":"Xrm.Page.getControl().getLabel() (8.0+)",
          "description":"Returns the label for the control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getLabel()"
+            "Xrm.Page.getControl(\"${controlname}\").getLabel()"
          ]
       }
    },
@@ -1202,7 +1202,7 @@
          "prefix":"Xrm.Page.getControl() (7.1+)",
          "description":"Returns a reference to the knowledge base search control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\")"
+            "Xrm.Page.getControl(\"${controlname}\")"
          ]
       }
    },
@@ -1211,7 +1211,7 @@
          "prefix":"Xrm.Page.getControl().getSearchQuery() (7.1+)",
          "description":"Use this method to get the text used as the search criteria for the knowledge base management control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getSearchQuery()"
+            "Xrm.Page.getControl(\"${controlname}\").getSearchQuery()"
          ]
       }
    },
@@ -1220,7 +1220,7 @@
          "prefix":"Xrm.Page.getControl().getSelectedResult() (7.1+)",
          "description":"Use this method to get the currently selected result of the search control. The currently selected result also represents the result that is currently open.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getSelectedResult()"
+            "Xrm.Page.getControl(\"${controlname}\").getSelectedResult()"
          ]
       }
    },
@@ -1229,7 +1229,7 @@
          "prefix":"Xrm.Page.getControl().getTotalResultCount() (8.1+)",
          "description":"Gets the count of results found in the search control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getTotalResultCount()"
+            "Xrm.Page.getControl(\"${controlname}\").getTotalResultCount()"
          ]
       }
    },
@@ -1238,7 +1238,7 @@
          "prefix":"Xrm.Page.getControl().openSearchResult() (8.1+)",
          "description":"Opens a search result in the search control by specifying the result number.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").openSearchResult(index, \"Inline\"|\"Popout\")"
+            "Xrm.Page.getControl(\"${controlname}\").openSearchResult(${index}, \"${Inline|Popout}\")"
          ]
       }
    },
@@ -1247,7 +1247,7 @@
          "prefix":"Xrm.Page.getControl().removeOnPostSearch() (8.1+)",
          "description":"Use this method to remove an event handler from the PostSearch event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").removeOnPostSearch(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").removeOnPostSearch(${functionName})"
          ]
       }
    },
@@ -1256,7 +1256,7 @@
          "prefix":"Xrm.Page.getControl().removeOnResultOpened() (7.1+)",
          "description":"Use this method to remove an event handler from the OnResultOpened event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").removeOnResultOpened(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").removeOnResultOpened(${functionName})"
          ]
       }
    },
@@ -1265,7 +1265,7 @@
          "prefix":"Xrm.Page.getControl().removeOnSelection() (7.1+)",
          "description":"Use this method to remove an event handler from the OnSelection event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").removeOnSelection(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").removeOnSelection(${functionName})"
          ]
       }
    },
@@ -1274,7 +1274,7 @@
          "prefix":"Xrm.Page.getControl().setLabel() (8.0+)",
          "description":"Sets the label for the control.",
          "body":[
-            "Xrm.Page.getControl(\"fieldname\").setLabel(\"value\")"
+            "Xrm.Page.getControl(\"${fieldname}\").setLabel(\"${value}\")"
          ]
       }
    },
@@ -1283,7 +1283,7 @@
          "prefix":"Xrm.Page.getControl().setSearchQuery() (7.1+)",
          "description":"Use this method to set the text used as the search criteria for the knowledge base management control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").setSearchQuery(\"value\")"
+            "Xrm.Page.getControl(\"${controlname}\").setSearchQuery(\"${value}\")"
          ]
       }
    },
@@ -1292,7 +1292,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().getId() (5.0+)",
          "description":"Returns the name of the item.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getId()"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).getId()"
          ]
       }
    },
@@ -1301,7 +1301,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().getLabel() (5.0+)",
          "description":"Returns the label for the item.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getLabel()"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).getLabel()"
          ]
       }
    },
@@ -1310,7 +1310,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().getVisible() (5.0+)",
          "description":"Returns a value that indicates whether the item is currently visible.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").getVisible()"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).getVisible()"
          ]
       }
    },
@@ -1319,7 +1319,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().setFocus() (5.0+)",
          "description":"Sets the focus on the item.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setFocus()"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).setFocus()"
          ]
       }
    },
@@ -1328,7 +1328,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().setLabel() (5.0+)",
          "description":"Sets the label for the item.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setLabel(\"value\")"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).setLabel(\"${value}\")"
          ]
       }
    },
@@ -1337,7 +1337,7 @@
          "prefix":"Xrm.Page.ui.navigation.items.get().setVisible() (5.0+)",
          "description":"Sets a value that indicates whether the item is visible.",
          "body":[
-            "Xrm.Page.ui.navigation.items.get(navigationindex|\"navigationname\").setVisible(true|false)"
+            "Xrm.Page.ui.navigation.items.get(${navigationindex|\"navigationname\"}).setVisible(true|false)"
          ]
       }
    },
@@ -1436,7 +1436,7 @@
          "prefix":"Xrm.execObj.getSharedVariable() (5.0+)",
          "description":"Retrieves a variable set using setSharedVariable.",
          "body":[
-            "execObj.getSharedVariable(\"key\")"
+            "execObj.getSharedVariable(\"${key}\")"
          ]
       }
    },
@@ -1445,7 +1445,7 @@
          "prefix":"Xrm.execObj.setSharedVariable() (5.0+)",
          "description":"Sets the value of a variable to be used by a handler after the current handler completes.",
          "body":[
-            "execObj.setSharedVariable(\"key\", value)"
+            "execObj.setSharedVariable(\"${key}\", ${value})"
          ]
       }
    },
@@ -1454,7 +1454,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().getLabel() (5.0+)",
          "description":"Returns the label for the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getLabel()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).getLabel()"
          ]
       }
    },
@@ -1463,7 +1463,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().getName() (5.0+)",
          "description":"Method to return the name of the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getName()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).getName()"
          ]
       }
    },
@@ -1472,7 +1472,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().getParent() (5.0+)",
          "description":"Method to return the tab containing the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getParent()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).getParent()"
          ]
       }
    },
@@ -1481,7 +1481,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().getVisible() (5.0+)",
          "description":"Returns true if the section is visible, otherwise returns false.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).getVisible()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).getVisible()"
          ]
       }
    },
@@ -1490,7 +1490,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().setLabel() (5.0+)",
          "description":"Sets the label for the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).setLabel(\"value\")"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).setLabel(\"${value}\")"
          ]
       }
    },
@@ -1499,7 +1499,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().sections.get().setVisible() (5.0+)",
          "description":"Sets a value to show or hide the section.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).sections.get(null|\"sectionname\"|sectionindex).setVisible(true|false)"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).sections.get(${null|\"sectionname\"|sectionindex}).setVisible(true|false)"
          ]
       }
    },
@@ -1589,7 +1589,7 @@
          "prefix":"Xrm.Page.getControl().addOnLoad() (7.1+)",
          "description":"Use this method to add event handlers to the GridControlOnLoad event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").addOnLoad(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").addOnLoad(${functionName})"
          ]
       }
    },
@@ -1598,7 +1598,7 @@
          "prefix":"Xrm.Page.getControl().getGrid() (7.1+)",
          "description":"Use this method to get access to the Grid available in the GridControl.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid()"
          ]
       }
    },
@@ -1607,7 +1607,7 @@
          "prefix":"Xrm.Page.getControl() (7.1+)",
          "description":"Returns the grid control.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\")"
+            "Xrm.Page.getControl(\"${controlname}\")"
          ]
       }
    },
@@ -1616,7 +1616,7 @@
          "prefix":"Xrm.Page.getControl().getViewSelector().getCurrentView() (7.1+)",
          "description":"Use this method to get a reference to the current view.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getViewSelector().getCurrentView()"
+            "Xrm.Page.getControl(\"${controlname}\").getViewSelector().getCurrentView()"
          ]
       }
    },
@@ -1625,16 +1625,16 @@
          "prefix":"Xrm.Page.getControl().getEntityName() (7.1+)",
          "description":"Use this method to get the logical name of the entity data displayed in the grid.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getEntityName()"
+            "Xrm.Page.getControl(\"${controlname}\").getEntityName()"
          ]
       }
    },
    {
       "Get Row Data (7.1+)":{
-         "prefix":"Xrm.Page.getControl(\"controlname\").getGrid().getRows().get().getData() (7.1+)",
+         "prefix":"Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get().getData() (7.1+)",
          "description":"Returns the GridRowData for the GridRow.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData()"
          ]
       }
    },
@@ -1643,7 +1643,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity() (7.1+)",
          "description":"Returns the GridEntity for the GridRowData.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData().getEntity()"
          ]
       }
    },
@@ -1652,7 +1652,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows().getData().get().getEntity().getData().getEntity().getId() (7.1+)",
          "description":"Returns the id for the record in the row.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getId()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData().getEntity().getId()"
          ]
       }
    },
@@ -1661,7 +1661,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getEntityName() (7.1+)",
          "description":"Returns the logical name for the record in the row.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getEntityName()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData().getEntity().getEntityName()"
          ]
       }
    },
@@ -1670,7 +1670,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getPrimaryAttributeValue() (7.1+)",
          "description":"Returns the primary attribute value for the record in the row.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getPrimaryAttributeValue()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData().getEntity().getPrimaryAttributeValue()"
          ]
       }
    },
@@ -1679,7 +1679,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows().get().getData().getEntity().getEntityReference() (7.1+)",
          "description":"Returns the entity reference for the record in the row.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows().get(rowindex).getData().getEntity().getEntityReference()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows().get(${rowindex}).getData().getEntity().getEntityReference()"
          ]
       }
    },
@@ -1688,7 +1688,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getRows() (7.1+)",
          "description":"Returns a collection of every GridRow in the Grid.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getRows()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getRows()"
          ]
       }
    },
@@ -1697,7 +1697,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getSelectedRows() (7.1+)",
          "description":"Returns a collection of every selected GridRow in the Grid.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getSelectedRows()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getSelectedRows()"
          ]
       }
    },
@@ -1706,7 +1706,7 @@
          "prefix":"Xrm.Page.getControl().getGrid().getTotalRecordCount() (7.1+)",
          "description":"Returns the total number of records that match the filter criteria of the view, not limited by the number visible in a single page.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getGrid().getTotalRecordCount()"
+            "Xrm.Page.getControl(\"${controlname}\").getGrid().getTotalRecordCount()"
          ]
       }
    },
@@ -1715,7 +1715,7 @@
          "prefix":"Xrm.Page.getControl().getViewSelector() (7.1+)",
          "description":"Use this method to get access to the ViewSelector available for the GridControl.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getViewSelector()"
+            "Xrm.Page.getControl(\"${controlname}\").getViewSelector()"
          ]
       }
    },
@@ -1724,7 +1724,7 @@
          "prefix":"Xrm.Page.getControl().getViewSelector().isVisible() (7.1+)",
          "description":"Use this method to determine whether the view selector is visible.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").getViewSelector().isVisible()"
+            "Xrm.Page.getControl(\"${controlname}\").getViewSelector().isVisible()"
          ]
       }
    },
@@ -1733,7 +1733,7 @@
          "prefix":"Xrm.Page.getControl().refresh() (5.0+)",
          "description":"Refreshes the data displayed in a subgrid.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").refresh()"
+            "Xrm.Page.getControl(\"${controlname}\").refresh()"
          ]
       }
    },
@@ -1742,7 +1742,7 @@
          "prefix":"Xrm.Page.getControl().removeOnLoad() (7.1+)",
          "description":"Use this method to remove event handlers from the GridControlOnLoad event.",
          "body":[
-            "Xrm.Page.getControl(\"controlname\").removeOnLoad(functionName)"
+            "Xrm.Page.getControl(\"${controlname}\").removeOnLoad(${functionName})"
          ]
       }
    },
@@ -1757,7 +1757,7 @@
             "\tname: \"Contacts Saved Query\"",
             "}",
             "",
-            "Xrm.Page.getControl(\"controlname\").getViewSelector().setCurrentView(contactSavedQuery);"
+            "Xrm.Page.getControl(\"${controlname}\").getViewSelector().setCurrentView(contactSavedQuery);"
          ]
       }
    },
@@ -1766,7 +1766,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().getDisplayState() (5.0+)",
          "description":"Returns a value that indicates whether the tab is collapsed or expanded.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getDisplayState()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).getDisplayState()"
          ]
       }
    },
@@ -1775,7 +1775,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().getLabel() (5.0+)",
          "description":"Returns the tab label.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getLabel()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).getLabel()"
          ]
       }
    },
@@ -1784,7 +1784,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().getName() (5.0+)",
          "description":"Returns the name of the tab.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getName()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).getName()"
          ]
       }
    },
@@ -1793,7 +1793,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().getParent() (5.0+)",
          "description":"Returns the Xrm.Page.ui (client-side reference) object.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getParent()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).getParent()"
          ]
       }
    },
@@ -1802,7 +1802,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().getVisible() (5.0+)",
          "description":"Returns a value that indicates whether the tab is visible.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).getVisible()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).getVisible()"
          ]
       }
    },
@@ -1811,7 +1811,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().setDisplayState() (5.0+)",
          "description":"Sets the tab to be collapsed or expanded.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setDisplayState(\"expanded\"|\"collapsed\")"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).setDisplayState(\"${expanded|collapsed}\")"
          ]
       }
    },
@@ -1820,7 +1820,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().setFocus() (5.0+)",
          "description":"Sets the focus on the tab.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setFocus()"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).setFocus()"
          ]
       }
    },
@@ -1829,7 +1829,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().setLabel() (5.0+)",
          "description":"Sets the label for the tab.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setLabel(\"value\")"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).setLabel(\"${value}\")"
          ]
       }
    },
@@ -1838,7 +1838,7 @@
          "prefix":"Xrm.Page.ui.tabs.get().setVisible() (5.0+)",
          "description":"Sets a value that indicates whether the control is visible.",
          "body":[
-            "Xrm.Page.ui.tabs.get(null|\"tabname\"|tabindex).setVisible(true|false)"
+            "Xrm.Page.ui.tabs.get(${null|\"tabname\"|tabindex}).setVisible(${true|false})"
          ]
       }
    },
@@ -1847,7 +1847,7 @@
          "prefix":"Xrm.Page.ui.clearFormNotification() (6.0+)",
          "description":"Use this method to remove form level notifications.",
          "body":[
-            "Xrm.Page.ui.clearFormNotification(\"uniqueId\")"
+            "Xrm.Page.ui.clearFormNotification(\"${uniqueId}\")"
          ]
       }
    },
@@ -1910,7 +1910,7 @@
          "prefix":"Xrm.Page.ui.setFormNotification() (6.0+)",
          "description":"Use this method to display form level notifications.",
          "body":[
-            "Xrm.Page.ui.setFormNotification(\"message\", \"ERROR\"|\"WARNING\"|\"INFO\", \"uniqueId\")"
+            "Xrm.Page.ui.setFormNotification(\"${message}\", \"${ERROR|WARNING|INFO}\", \"${uniqueId}\")"
          ]
       }
    },
@@ -1919,7 +1919,7 @@
          "prefix":"Xrm.Utility.alertDialog() (6.0+)",
          "description":"Displays a dialog box containing an application-defined message.",
          "body":[
-            "Xrm.Utility.alertDialog(\"message\", [functionName])"
+            "Xrm.Utility.alertDialog(\"${message}\", ${functionName})"
          ]
       }
    },
@@ -1928,7 +1928,7 @@
          "prefix":"Xrm.Utility.confirmDialog() (6.0+)",
          "description":"Displays a confirmation dialog box that contains an optional message as well as OK and Cancel buttons.",
          "body":[
-            "Xrm.Utility.confirmDialog(\"message\", [yesFunctionName], [noFunctionName])"
+            "Xrm.Utility.confirmDialog(\"${message}\", ${[yesfunctionName]}, ${[nofunctionName]})"
          ]
       }
    },
@@ -1937,7 +1937,7 @@
          "prefix":"Xrm.Utility.isActivityType() (6.0+)",
          "description":"Determine if an entity is an activity entity.",
          "body":[
-            "Xrm.Utility.isActivityType(\"entityName\")"
+            "Xrm.Utility.isActivityType(\"${entityName}\")"
          ]
       }
    },
@@ -1969,7 +1969,7 @@
             "var parameters = {};",
             "parameters[\"name\"] = \"Test\";",
             "",
-            "Xrm.Utility.openQuickCreate(entityName, [createFromEntity], [parameters]).then([successFunction], [errorFunction]);"
+            "Xrm.Utility.openQuickCreate(entityName, ${[createFromEntity]}, ${[parameters]}).then(${[successFunction]}, ${[errorFunction]});"
          ]
       }
    },
