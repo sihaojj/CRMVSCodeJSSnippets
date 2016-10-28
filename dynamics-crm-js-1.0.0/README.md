@@ -4,7 +4,7 @@ JavaScript code snippets for Dynamics CRM 2011 - 2016 (5.0 - 8.1)
 
 Demo:
 
-![test](https://github.com/jlattimer/CRMVSCodeJSSnippets/blob/master/extras/VsCodeSnippets.gif?raw=true, "CRMVSCodeJSSnippetsImage")
+![CRMVSCodeJSSnippetsImage](https://github.com/jlattimer/CRMVSCodeJSSnippets/blob/master/extras/VsCodeSnippets.gif?raw=true, "CRMVSCodeJSSnippetsImage")
 
 To make things easier the snippets are grouped into a few main categories:
 
