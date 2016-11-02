@@ -1976,7 +1976,7 @@
             "description": "8.2+ Creates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
             "body": [
                 "var entity = {};",
-                "var entity.name = \"test\"",
+                "var entity.name = \"test\";",
                 "",
                 "Xrm.Mobile.offline.createRecord(\"${entityName}\", entity).then(${[successFunction]}, ${[errorFunction]});"
             ]
@@ -2011,7 +2011,7 @@
             "description": "8.2+ Updates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
             "body": [
                 "var entity = {};",
-                "var entity.name = \"test\"",
+                "var entity.name = \"test\";",
                 "",
                 "Xrm.Mobile.offline.updateRecord(\"${entityName}\", \"${id}\", entity).then(${[successFunction]}, ${[errorFunction]});"
             ]
@@ -2028,8 +2028,8 @@
     },
     {
         "Add Cell Notification (8.2+)": {
-            "prefix": "XrmControlAddNotification",
-            "description": "8.2+ Displays an error or recommendation notification for a control, and lets you specify actions to execute based on the notification. ",
+            "prefix": "XrmControlsAddNotification",
+            "description": "8.2+ Displays an error or recommendation notification for a control, and lets you specify actions to execute based on the notification.",
             "body": [
                 "var actionCollection = {",
                 "\tmessage: \"${message}\",",
@@ -2042,7 +2042,7 @@
                 "",
                 "Xrm.Page.getControl(\"${fieldname}\").addNotification({",
                 "\tmessages: [\"${message}\"],",
-                "\tnotificationLevel: \"${RECOMMENDATION|ERROR}\",  ",
+                "\tnotificationLevel: \"${RECOMMENDATION|ERROR}\",",
                 "\tuniqueId: \"${uniqueId}\",",
                 "\tactions: [actionCollection]",
                 "});"
