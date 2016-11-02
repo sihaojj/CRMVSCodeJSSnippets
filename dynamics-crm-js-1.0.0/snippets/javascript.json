@@ -1976,7 +1976,7 @@
             "description": "8.2+ Creates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
             "body": [
                 "var entity = {};",
-                "var entity.name = \"test\";",
+                "entity.name = \"test\";",
                 "",
                 "Xrm.Mobile.offline.createRecord(\"${entityName}\", entity).then(${[successFunction]}, ${[errorFunction]});"
             ]
@@ -2011,7 +2011,7 @@
             "description": "8.2+ Updates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
             "body": [
                 "var entity = {};",
-                "var entity.name = \"test\";",
+                "entity.name = \"test\";",
                 "",
                 "Xrm.Mobile.offline.updateRecord(\"${entityName}\", \"${id}\", entity).then(${[successFunction]}, ${[errorFunction]});"
             ]

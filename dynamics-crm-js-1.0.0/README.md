@@ -1,4 +1,4 @@
-**v1.2.1**
+**v1.2.2**
 
 JavaScript code snippets for Dynamics 365/CRM 2011 - 2016 (5.0 - 8.2)
 
