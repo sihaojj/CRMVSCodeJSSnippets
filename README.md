@@ -1,5 +1,5 @@
 # CRM VS Code JS Snippets
-JavaScript code snippets for Dynamics CRM 2011 - 2016 (5.0 - 8.1)
+JavaScript code snippets for Dynamics 365/CRM 2011 - 2016 (5.0 - 8.2)
 
 Demo:
 
@@ -15,10 +15,12 @@ To make things easier the snippets are grouped into a few main categories:
 * XrmFormSelector
 * XrmGrid
 * XrmNavigation
+* XrmMobile
+* XrmPanel
 * XrmProcess
 * XrmTabs
 * XrmUi
 * XrmUtility
 
-Everything from the client-side portion of the CRM SDK from 2011 - 2016 should be included. You can view the complete list of snippets here:
+Everything from the client-side portion of the Dynamics 365/CRM SDK from 2011 - 2016 should be included. You can view the complete list of snippets here:
 [https://github.com/jlattimer/CRMVSCodeJSSnippets/wiki/Included-Snippets](https://github.com/jlattimer/CRMVSCodeJSSnippets/wiki/Included-Snippets)

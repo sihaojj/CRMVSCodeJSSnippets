@@ -370,7 +370,7 @@
     },
     {
         "Set Visible (7.0+)": {
-            "prefix": "70+ XrmProcessSetVisible",
+            "prefix": "7.0+ XrmProcessSetVisible",
             "description": "Use this method to show or hide the business process flow control.",
             "body": [
                 "Xrm.Page.ui.process.setVisible(${true|false})"
@@ -1352,7 +1352,7 @@
     },
     {
         "Get Save Mode (5.0+)": {
-            "prefix": "XrmExecObjGetEventArgs()GetSaveMode",
+            "prefix": "XrmExecObjGetSaveMode",
             "description": "5.0+ Returns a value indicating how the save event was initiated by the user.",
             "body": [
                 "execObj.getEventArgs().getSaveMode()"
@@ -1361,7 +1361,7 @@
     },
     {
         "Is Default Prevented (5.0+)": {
-            "prefix": "XrmExecObjGetEventArgs()IsDefaultPrevented",
+            "prefix": "XrmExecObjIsDefaultPrevented",
             "description": "5.0+ Returns a value indicating whether the save event has been canceled because the preventDefault method was used in this event handler or a previous event handler.",
             "body": [
                 "execObj.getEventArgs().isDefaultPrevented()"
@@ -1370,7 +1370,7 @@
     },
     {
         "Prevent Default (5.0+)": {
-            "prefix": "XrmExecObjGetEventArgs()PreventDefault",
+            "prefix": "XrmExecObjPreventDefault",
             "description": "5.0+ Cancels the save operation, but all remaining handlers for the event will still be executed.",
             "body": [
                 "execObj.getEventArgs().preventDefault()"
@@ -1948,7 +1948,7 @@
     },
     {
         "Open Web Resource (5.0+)": {
-            "prefix": "XrmUtilityOpenWebResource ",
+            "prefix": "XrmUtilityOpenWebResource",
             "description": "5.0+ Opens an HTML web resource.",
             "body": [
                 "var webResourceName = \"new_webResource.htm\";",
@@ -1958,6 +1958,184 @@
                 "var height = 300;",
                 "",
                 "Xrm.Utility.openWebResource(webResourceName, webResourceData, width, height);"
+            ]
+        }
+    },
+    {
+        "Is Offline Enabled (8.2+)": {
+            "prefix": "XrmMobileIsOfflineEnabled",
+            "description": "8.2+ Returns whether an entity is offline enabled.",
+            "body": [
+                "Xrm.Mobile.offline.isOfflineEnabled(\"${entityName}\")"
+            ]
+        }
+    },
+    {
+        "Create Offline Record (8.2+)": {
+            "prefix": "XrmMobileCreateOfflineRecord",
+            "description": "8.2+ Creates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
+            "body": [
+                "var entity = {};",
+                "var entity.name = \"test\"",
+                "",
+                "Xrm.Mobile.offline.createRecord(\"${entityName}\", entity).then(${[successFunction]}, ${[errorFunction]});"
+            ]
+        }
+    },
+    {
+        "Retrieve Offline Record (8.2+)": {
+            "prefix": "XrmMobileRetrieveOfflineRecord",
+            "description": "8.2+ Retrieves an entity record in Dynamics 365 mobile clients while working in the offline mode.",
+            "body": [
+                "var options = \"?$select=name&$expand=primarycontactid($select=contactid,fullname)\";",
+                "",
+                "Xrm.Mobile.offline.retrieveRecord(\"${entityName}\", \"${id}\", options).then(${[successFunction]}, ${[errorFunction]});"
+            ]
+        }
+    },
+    {
+        "Retrieve Multiple Offline Records (8.2+)": {
+            "prefix": "XrmMobileRetrieveMultipleOfflineRecords",
+            "description": "8.2+ Retrieves a collection of entity records in Dynamics 365 mobile clients while working in the offline mode.",
+            "body": [
+                "var options = \"?$select=name&$expand=primarycontactid($select=contactid,fullname)\";",
+                "var maxPageSize = 100;",
+                "",
+                "Xrm.Mobile.offline.retrieveMultipleRecords(\"${entityName}\", options, maxPageSize).then(${[successFunction]}, ${[errorFunction]});"
+            ]
+        }
+    },
+    {
+        "Update Offline Record (8.2+)": {
+            "prefix": "XrmMobileUpdateOfflineRecord",
+            "description": "8.2+ Updates an entity record in Dynamics 365 mobile clients while working in the offline mode.",
+            "body": [
+                "var entity = {};",
+                "var entity.name = \"test\"",
+                "",
+                "Xrm.Mobile.offline.updateRecord(\"${entityName}\", \"${id}\", entity).then(${[successFunction]}, ${[errorFunction]});"
+            ]
+        }
+    },
+    {
+        "Delete Offline Record (8.2+)": {
+            "prefix": "XrmMobileDeleteOfflineRecord",
+            "description": "8.2+ Deletes an entity record in Dynamics 365 mobile clients while working in the offline mode.",
+            "body": [
+                "Xrm.Mobile.offline.deleteRecord(\"${entityName}\", \"${id}\").then(${[successFunction]}, ${[errorFunction]});"
+            ]
+        }
+    },
+    {
+        "Add Cell Notification (8.2+)": {
+            "prefix": "XrmControlAddNotification",
+            "description": "8.2+ Displays an error or recommendation notification for a control, and lets you specify actions to execute based on the notification. ",
+            "body": [
+                "var actionCollection = {",
+                "\tmessage: \"${message}\",",
+                "\tactions: null",
+                "};",
+                "",
+                "actionCollection.actions = [function () {",
+                "\t${functionbody}",
+                "}];",
+                "",
+                "Xrm.Page.getControl(\"${fieldname}\").addNotification({",
+                "\tmessages: [\"${message}\"],",
+                "\tnotificationLevel: \"${RECOMMENDATION|ERROR}\",  ",
+                "\tuniqueId: \"${uniqueId}\",",
+                "\tactions: [actionCollection]",
+                "});"
+            ]
+        }
+    },
+    {
+        "Get Barcode Value (8.2+)": {
+            "prefix": "XrmUtilityGetBarcodeValue",
+            "description": "8.2+ Returns the barcode information, such as a product number, scanned using the device camera.",
+            "body": [
+                "Xrm.Utility.getBarcodeValue().then(${[successFunction]}, ${[errorFunction]})"
+            ]
+        }
+    },
+    {
+        "Get Current Position (8.2+)": {
+            "prefix": "XrmUtilityGetCurrentPosition",
+            "description": "8.2+ Returns the current location using the device geolocation capability.",
+            "body": [
+                "Xrm.Utility.getCurrentPosition().then(${[successFunction]}, ${[errorFunction]})"
+            ]
+        }
+    },
+    {
+        "Load Panel (8.2+)": {
+            "prefix": "XrmPanelLoadPanel",
+            "description": "8.2+ Displays the web page represented by a URL in the static area in the side pane, which appears on all pages in the Dynamics 365 web client.",
+            "body": [
+                "Xrm.Panel.LoadPanel(\"${url}\", \"${title}\")"
+            ]
+        }
+    },
+    {
+        "Get Form Context (8.2+)": {
+            "prefix": "XrmExecObjGetFormContext",
+            "description": "8.2+ Method that returns a reference to either the form (Xrm.Page) or editable grid depending on where the method was called.",
+            "body": [
+                "execObj.getFormContext()"
+            ]
+        }
+    },
+    {
+        "Get Process Instances (8.2+)": {
+            "prefix": "XrmProcessGetProcessInstances",
+            "description": "8.2+ Returns all the process instances for the entity record that the calling user has access to.",
+            "body": [
+                "Xrm.Page.data.process.getProcessInstances(${callbackfunctionName}(${object})"
+            ]
+        }
+    },
+    {
+        "Set Active Process Instance (8.2+)": {
+            "prefix": "XrmProcessSetActiveProcessInstance",
+            "description": "8.2+ Sets a process instance as the active instance.",
+            "body": [
+                "Xrm.Page.data.process.setActiveProcessInstance(${\"processInstanceId}\", ${callbackfunctionName})"
+            ]
+        }
+    },
+    {
+        "Add OnProcessStatusChange (8.2+)": {
+            "prefix": "XrmProcessAddOnProcessStatusChange",
+            "description": "8.2+ Use this to add a function as an event handler for the OnProcessStatusChange event event so that it will be called when the business process flow status changes.",
+            "body": [
+                "Xrm.Page.data.process.addOnProcessStatusChange(${functionName})"
+            ]
+        }
+    },
+    {
+        "Remove OnProcessStatusChange (8.2+)": {
+            "prefix": "XrmProcessRemoveOnProcessStatusChange",
+            "description": "8.2+ Use this to remove a function as an event handler for the OnProcessStatusChange event event.",
+            "body": [
+                "Xrm.Page.data.process.removeOnProcessStatusChange(${functionName})"
+            ]
+        }
+    },
+    {
+        "Get Instance Id (8.2+)": {
+            "prefix": "XrmProcessGetInstanceId",
+            "description": "8.2+ Returns the unique identifier of the process instance.",
+            "body": [
+                "Xrm.Page.data.process.getInstanceId()"
+            ]
+        }
+    },
+    {
+        "Get Instance Name (8.2+)": {
+            "prefix": "XrmProcessGetInstanceName",
+            "description": "8.2+ Returns the name of the process instance.",
+            "body": [
+                "Xrm.Page.data.process.getInstanceName()"
             ]
         }
     }
