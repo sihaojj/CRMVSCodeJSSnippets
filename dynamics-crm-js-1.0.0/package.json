@@ -3,7 +3,7 @@
     "publisher": "JLattimer",
     "description": "JavaScript snippets for Dynamics 365/CRM 2011/2013/2015/2016",
     "displayName": "JavaScript snippets for Dynamics 365/CRM 2011/2013/2015/2016",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "author": "Jason Lattimer",
     "engines": {
         "vscode": "0.10.x"

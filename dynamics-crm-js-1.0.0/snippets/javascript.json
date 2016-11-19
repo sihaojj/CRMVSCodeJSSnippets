@@ -65,7 +65,7 @@
     {
         "Get IsPartyList (6.0+)": {
             "prefix": "XrmAttributeGetIsPartyList",
-            "description": " 6.0+ Returns a Boolean value indicating whether the lookup represents a partylist lookup. Partylist lookups allow for multiple records to be set, such as the To: field for an email entity record.",
+            "description": "6.0+ Returns a Boolean value indicating whether the lookup represents a partylist lookup. Partylist lookups allow for multiple records to be set, such as the To: field for an email entity record.",
             "body": [
                 "Xrm.Page.getAttribute(\"${fieldname}\").getIsPartyList()"
             ]
@@ -370,8 +370,8 @@
     },
     {
         "Set Visible (7.0+)": {
-            "prefix": "7.0+ XrmProcessSetVisible",
-            "description": "Use this method to show or hide the business process flow control.",
+            "prefix": "XrmProcessSetVisible",
+            "description": "7.0+ Use this method to show or hide the business process flow control.",
             "body": [
                 "Xrm.Page.ui.process.setVisible(${true|false})"
             ]
@@ -655,7 +655,7 @@
     {
         "Get Time Zone Offset Minutes (7.1+)": {
             "prefix": "XrmContextGetTimeZoneOffsetMinutes",
-            "description": " 7.1+ Returns the difference between the local time and Coordinated Universal Time (UTC).",
+            "description": "7.1+ Returns the difference between the local time and Coordinated Universal Time (UTC).",
             "body": [
                 "Xrm.Page.context.getTimeZoneOffsetMinutes()"
             ]
@@ -1524,7 +1524,7 @@
     {
         "Get Name (7.0+)": {
             "prefix": "XrmProcessGetStagesGetSteps",
-            "description": "7.0+ Returns the status of the stage.",
+            "description": "7.0+ Returns a collection of steps in the stage.",
             "body": [
                 "Xrm.Page.data.process.getActiveProcess().getStages().get(${stageindex}).getSteps()"
             ]
@@ -1578,7 +1578,7 @@
     {
         "Get Grid Control (7.1+)": {
             "prefix": "XrmControlsGetControl",
-            "description": "7.1+ Returns the grid or knowledge base search control.",
+            "description": "7.1+ Returns the control.",
             "body": [
                 "Xrm.Page.getControl(\"${controlname}\")"
             ]
@@ -2136,6 +2136,24 @@
             "description": "8.2+ Returns the name of the process instance.",
             "body": [
                 "Xrm.Page.data.process.getInstanceName()"
+            ]
+        }
+    },
+    {
+        "Get Status (8.2+)": {
+            "prefix": "XrmProcessGetStatus",
+            "description": "8.2+ Returns the current status of the process instance.",
+            "body": [
+                "Xrm.Page.data.process.getStatus()"
+            ]
+        }
+    },
+    {
+        "Set Status (8.2+)": {
+            "prefix": "XrmProcessSetStatus",
+            "description": "8.2+ Sets the current status of the active process instance.",
+            "body": [
+                "Xrm.Page.data.process.setStatus(\"${status}\", ${callbackFunction})"
             ]
         }
     }
