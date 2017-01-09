@@ -1,6 +1,8 @@
 # CRM VS Code JS Snippets
 JavaScript code snippets for Dynamics 365/CRM 2011 - 2016 (5.0 - 8.2)
 
+Download from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=JLattimer.dynamics-crm-js) or inside VS Code
+
 Demo:
 
 ![test](https://github.com/jlattimer/CRMVSCodeJSSnippets/blob/master/extras/VsCodeSnippets.gif?raw=true, "CRMVSCodeJSSnippetsImage")
