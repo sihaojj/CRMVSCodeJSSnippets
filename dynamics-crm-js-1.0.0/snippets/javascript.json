@@ -2156,5 +2156,106 @@
                 "Xrm.Page.data.process.setStatus(\"${status}\", ${callbackFunction})"
             ]
         }
+    },
+    {
+        "Get QuickForm Controls (8.1+)": {
+            "prefix": "XrmUiQuickFormControls",
+            "description": "8.1+ A collection of all quick view controls on a form.",
+            "body": [
+                "Xrm.Page.ui.quickForms"
+            ]
+        }
+    },
+    {
+        "ForEach QuickForm Controls (8.1+)": {
+            "prefix": "XrmUiQuickFormControlsForEach",
+            "description": "8.1+ Apply an action in a delegate function to each object in the collection of quick view controls on a form.",
+            "body": [
+                "Xrm.Page.ui.quickForms.forEach(function (qvcontrol, index) {",
+                "${functionbody}",
+                "})"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Control (8.1+)": {
+            "prefix": "XrmUiQuickFormGetControl",
+            "description": "8.1+ Gets the constituent controls in a quick view control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getControl(\"${controlname}\")"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Control Type (8.1+)": {
+            "prefix": "XrmUiQuickFormGetControlType",
+            "description": "8.1+ Returns a string value that categorizes quick view controls.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getControlType()"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Name (8.1+)": {
+            "prefix": "XrmUiQuickFormGetName",
+            "description": "8.1+ Returns the name assigned to the quick view control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getName()"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Parent (8.1+)": {
+            "prefix": "XrmUiQuickFormGetParent",
+            "description": "8.1+ Returns a reference to the section object that contains the control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getParent()"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Visible (8.1+)": {
+            "prefix": "XrmUiQuickFormGetVisible",
+            "description": "8.1+ Returns a value that indicates whether the quick view control is currently visible.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getVisible()"
+            ]
+        }
+    },
+    {
+        "QuickForm Get Label (8.1+)": {
+            "prefix": "XrmUiQuickFormGetLabel",
+            "description": "8.1+ Returns the label for the quick view control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").getLabel()"
+            ]
+        }
+    },
+    {
+        "QuickForm Set Label (8.1+)": {
+            "prefix": "XrmUiQuickFormSetLabel",
+            "description": "8.1+ Sets the label for the quick view control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").setLabel(\"${value}\")"
+            ]
+        }
+    },
+    {
+        "QuickForm Is Loaded (8.1+)": {
+            "prefix": "XrmUiQuickFormIsLoaded",
+            "description": "8.1+ Returns whether the data binding for the constituent controls in a quick view control is complete.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").isLoaded()"
+            ]
+        }
+    },
+    {
+        "QuickForm Refresh (8.1+)": {
+            "prefix": "XrmUiQuickFormRefresh",
+            "description": "8.1+ Refreshes the data displayed in a quick view control.",
+            "body": [
+                "Xrm.Page.ui.quickForms.get(\"${qvcontrolname}\").refresh()"
+            ]
+        }
     }
 ]
